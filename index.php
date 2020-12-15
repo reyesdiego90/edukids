@@ -85,10 +85,11 @@
                               <!-- Google Maps -->
                           </div>
                           <div class="col-10 col-md-4 mx-auto align-self-center py-4 mapDescription">
-                              <h6 class="font-weight-bold grey-text text-uppercase small">Head Office</h6>
-                              <h5 class="font-weight-normal mb-4">Seattle, WA</h5>
-                              <p class="text-muted font-weight-light">2651 Main Street, Suit 124<br>Seattle, WA, 98101</p>
-                              <p class="text-muted font-weight-light mb-0">Phone: +1 987 123 6548<br>Email: hello@thetheme.io</p>
+                              <h6 class="font-weight-bold grey-text text-uppercase small">Direccion</h6>
+                              <h5 class="font-weight-normal mb-4">2 ave. 2-25 colonia jardines de san juan </h5>
+                              <p class="text-muted font-weight-light">Whatsapp: 50162833</p>
+                              <p class="text-muted font-weight-light">Correo: centroeducativoedu@gmail.com </p>
+                              <p class="text-muted font-weight-light">Horario de Atención: <br> Lunes a viernes 8:00am a 3:00pm </p>
                           </div>
                       </div>
                   </div>
@@ -136,16 +137,16 @@
           </div>
       </div>
       <div class="preprimaria" id="preprimaria">
-          <div class="image-prepri">
+          <div class="image-prepri informativeText">
               <picture>
-                  <img src="https://img.pngio.com/kid-cartoon-png-kids-cartoon-png-866246-pngtube-cartoon-kids-png-920_478.png" alt="Kid Cartoon Png - Kids Cartoon Png {#866246} - Pngtube">
+                  <img src="./img/preprimaria/portada-preprimaria.png" alt="Kid Cartoon Png - Kids Cartoon Png {#866246} - Pngtube">
               </picture>
           </div>
-          <div class="container-prepri">
+          <div class="container-prepri informativeText">
               <h1>Pre-Primaria</h1>
           </div>
-          <div class="divider-line"></div>
-          <p>
+          <div class="divider-line informativeText"></div>
+          <p class="informativeText">
               El nivel de Educación Preprimaria, se caracteriza por cumplir una doble finalidad:
               la socialización del ser humano y la estimulación de los procesos evolutivos.
               Se entiende por socialización el proceso de incorporación, a la conducta de las personas,
@@ -154,14 +155,14 @@
               espíritu de cooperación y respeto Su finalidad es que el niño y la niña se reconozcan como seres con identidad
               personal y como sujetos sociales.
           </p>
-          <div class="prepi-div">
-              <div class="prepri-div_container">
+          <div class="prepi-div informativeText">
+              <div class="prepri-div_container informativeText">
                   <picture>
                       <img src="./img/preprimaria/nursery.png" alt="Baby shoes circle icon - Transparent PNG &amp; SVG vector file" />
                   </picture>
                   <h3>Nursery</h3>
               </div>
-              <div class="prepri-div_container">
+              <div class="prepri-div_container informativeText">
                   <picture>
                       <img src="./img/preprimaria/prekinder.png" alt="Oso de peluche de dibujos animados - Descargar PNG/SVG transparente" />
                   </picture>
@@ -182,36 +183,36 @@
           </div>
       </div>
       <div class="primaria" id="primaria">
-          <div class="image-primero">
+          <div class="image-primero informativeText">
               <picture>
                   <img src="./img/Logo-primaria.png" alt="Foto que representa el grado de primaria">
               </picture>
           </div>
-          <div class="container-primaria">
+          <div class="container-primaria informativeText">
               <h1>Primaria</h1>
           </div>
-          <div class="divider-line"></div>
-          <p>
+          <div class="divider-line informativeText"></div>
+          <p class="informativeText">
               El nivel primario, también denominado como enseñanza o primaria básica es aquella que garantiza la alfabetización conforme el tiempo que
               dura que la misma que normalmente son seis años, identificado con grados aprendemos a el nivel primario también denominado como enseñanza
               básica que garantiza un nivel que aporte a los alumnos una buena formación e integridad que ayude a desarrollar sus capacidades.
           </p>
-          <div class="primaria-des">
+          <div class="primaria-des informativeText">
               <div class="primaria-des_container">
                   <picture>
-                      <img src="https://images.vexels.com/media/users/3/205519/isolated/preview/fbc3cf2c3eef6e7f3a4faa436b8eb20b-sonriente-personaje-de-pluma-de-ni--o-by-vexels.png" alt="Sonriente personaje de pluma de niño - Descargar PNG/SVG transparente" />
+                      <img src="./img/primaria/primero.png" alt="Sonriente personaje de pluma de niño - Descargar PNG/SVG transparente" />
                   </picture>
                   <h3>Primero</h3>
               </div>
               <div class="primaria-des_container">
                   <picture>
-                      <img src="https://images.vexels.com/media/users/3/205212/isolated/preview/487a3cdadbce38cdee4dda782f5ebd4b-calm-kid-reading-book-character-by-vexels.png" alt="Calm kid reading book character - Transparent PNG &amp; SVG vector file" />
+                      <img src="./img/primaria/segundo.png" alt="Calm kid reading book character - Transparent PNG &amp; SVG vector file" />
                   </picture>
                   <h3>Segundo</h3>
               </div>
               <div class="primaria-des_container">
                   <picture>
-                      <img src="https://images.vexels.com/media/users/3/205365/isolated/preview/da6a8ee792fdabf4e3c35a1783e5c454-happy-boy-hug-character-by-vexels.png" alt="Happy boy hug character - Transparent PNG &amp; SVG vector file" />
+                      <img src="./img/primaria/tercero.png" alt="Happy boy hug character - Transparent PNG &amp; SVG vector file" />
                   </picture>
                   <h3>Tercero</h3>
               </div>
@@ -236,22 +237,22 @@
           </div>
       </div>
       <div class="secundaria" id="secundaria">
-          <div class="image-secundaria">
+          <div class="image-secundaria informativeText informativeText">
               <picture>
                   <img src="https://assets.change.org/photos/3/bl/xf/IxblxfrYuzNKWqG-800x450-noPad.jpg?1522100450" alt="Petition · Home Ec., Computer Skills, and First Aid should be required  classes · Change.org" /><!
               </picture>
           </div>
-          <div class="container-secundaria">
+          <div class="container-secundaria informativeText">
               <h1>Secundaria</h1>
           </div>
-          <div class="divider-line"></div>
-          <p>
+          <div class="divider-line informativeText"></div>
+          <p class="informativeText">
               El nivel secundario garantizar una educación inclusiva y equitativa de calidad y promover oportunidades de aprendizaje
               permanente para todos, es el paso previo a los estudios de enseñanza medio o superior prepara al alumno para que pueda
               alcanzar conforme el siguiente nivel y además que pueda desarrollar capacidades, habilidades y valores que le permitan
               desempeñarse satisfactoriamente en la sociedad.
           </p>
-          <div class="secundaria-des">
+          <div class="secundaria-des informativeText informativeText">
               <div class="secu-des_container">
                   <picture>
                       <img src="https://images.vexels.com/media/users/3/205546/isolated/preview/eaaccf9a4d134c57e1fb83897ae0951a-teen-with-big-cable-character-by-vexels.png" alt="Teen with big cable character - Transparent PNG &amp; SVG vector file" />
@@ -273,10 +274,33 @@
           </div>
       </div>
   </main>
-  <footer>
-    <span class="material-icons">
-      facebook
-    </span>
+  <footer class="page-footer font-small indigo darken-4 py-4">
+
+      <!-- Footer Elements -->
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-start">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center bg-transparent">
+              EDUKIDS
+            </div>
+            <!-- Copyright -->
+          </div>
+          <div class="col-md-6 d-flex justify-content-end">
+            <ul class="list-unstyled d-flex mb-0">
+              <li>
+                <span class="material-icons">
+                  <a href="https://www.facebook.com/EduKidsCenter/">facebook</a>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <!-- Footer Elements -->
+
   </footer>
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

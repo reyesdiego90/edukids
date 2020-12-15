@@ -199,12 +199,8 @@ p {
   transition: all 0.5s;
 }
 
-.mostrarArriba{
-  animation: zoomIn 0.8s;
-}
-
-.mostrarLado{
-  animation: fadeInRightBig 0.8s;
+.mostrarTexto{
+  animation: zoomIn 1s;
 }
 
 @keyframes mostrarArriba{
@@ -216,6 +212,14 @@ p {
   }
 }
 
+.mostrarArriba{
+  animation: zoomIn 0.7s;
+}
+
+.mostrarLado{
+  animation: fadeInRightBig 0.7s;
+}
+
 .box2-info h2 {
   font-weight: 700;
   font-size: 3.5rem;
@@ -223,14 +227,13 @@ p {
 }
 
 .divider-line {
-  background-color: var(--color-principal);
+  background-color: black;
   display: block;
   position: relative;
   max-width: 460px;
   width: 80%;
   height: 1px;
   margin: 0 auto 10px auto;
-  transition: max-width .2s ease-out 400s;
 }
 
 .box2-info p {
@@ -307,7 +310,7 @@ p {
 .preprimaria, .primaria, .secundaria {
   margin: 0 auto;
   margin-bottom: 40px;
-  max-width: 1090px;
+  max-width: 1450px;
   padding: 12px;
   align-items: center;
   display: flex;
@@ -321,6 +324,27 @@ p {
   object-fit: scale-down;
   width: 90vw;
   max-width: 1000px
+}
+
+.page-footer{
+  background-color: var(--color-azul);
+  font-size: 2rem;
+  color: white;
+}
+
+.page-footer a{
+  font-size: 5rem;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-copyright{
+  display: flex;
+  align-items: center;
+}
+
+.informativeText{
+  opacity: 0;
 }
 
 @media (min-width:425px) {
