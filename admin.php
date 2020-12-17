@@ -1,14 +1,4 @@
-<?php
-  session_start();
 
-  if(!isset($_SESSION['rol'])){
-    header('location: login.php');
-  }else{
-    if($_SESSION['rol'] != 1){
-      header('location: login.php');
-    }
-  }
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +9,9 @@
         <!-- ===== BOX ICONS ===== -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css' rel='stylesheet'>
+        <link href='https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css' rel='stylesheet'>
+        
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="css/admin.css">
 
@@ -98,5 +90,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
         <script src="js/dynamicPage.js"></script>
+        <script src="js/datatable.js"></script>
+        
     </body>
 </html>
