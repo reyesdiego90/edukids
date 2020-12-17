@@ -73,8 +73,7 @@ if(isset($_SESSION['rol'])){
 			<img class="wave" src="Images/Fondos/manos.jpg">
 		</div>
 		<div class="login-content">
-			<form method="POST" action="#">
-      
+			<form class="content">
 				<img src="Images/Logos/LogoEdu.jpg">
 				<h2 class="title">BIENVENIDO</h2>
            		<div class="input-div one">

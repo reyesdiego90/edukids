@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+.content{
+    width: 100%;
+    max-width: 315px;
+}
 body {
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
