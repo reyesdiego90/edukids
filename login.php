@@ -45,6 +45,9 @@ if(isset($_SESSION['rol'])){
         case 1:
           header('location: admin.php');  
         break;
+        case 2:
+          header('location: PantallaAlumno.php'); 
+        break;
         
         default;
       }
