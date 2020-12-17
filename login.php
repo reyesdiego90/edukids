@@ -14,7 +14,7 @@
 			<img class="wave" src="Images/Fondos/manos.jpg">
 		</div>
 		<div class="login-content">
-			<form runat="server">
+			<form class="content">
 				<img src="Images/Logos/LogoEdu.jpg">
 				<h2 class="title">BIENVENIDO</h2>
            		<div class="input-div one">
