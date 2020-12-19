@@ -1,3 +1,3 @@
-<div class="container">
-  Hola gg
+<div>
+  Soy el dashboard
 </div>

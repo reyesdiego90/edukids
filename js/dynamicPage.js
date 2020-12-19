@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('#pageStudent').on('click', function(){
       $.ajax({
           type: "POST",
-          url: "./Components/alumno.php",
+          url: "./Components/Register.php",
           success: function(response) {
               $('#div-results').html(response);
           }
@@ -12,7 +12,7 @@ $(document).ready(function() {
   $('#dashboard').on('click', function(){
       $.ajax({
           type: "POST",
-          url: "./Components/dashboard.php",
+          url: "./Components/alumno.php",
           success: function(response) {
               $('#div-results').html(response);
           }

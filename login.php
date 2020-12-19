@@ -45,9 +45,7 @@ if(isset($_SESSION['rol'])){
         case 1:
           header('location: admin.php');  
         break;
-        case 2:
-          header('location: PantallaAlumno.php'); 
-        break;
+   
         
         default;
       }
@@ -73,7 +71,7 @@ if(isset($_SESSION['rol'])){
 			<img class="wave" src="Images/Fondos/manos.jpg">
 		</div>
 		<div class="login-content">
-			<form class="content">
+			<form class="content" method="POST">
 				<img src="Images/Logos/LogoEdu.jpg">
 				<h2 class="title">BIENVENIDO</h2>
            		<div class="input-div one">
@@ -82,7 +80,7 @@ if(isset($_SESSION['rol'])){
            		   </div>
            		   <div class="div">
            		   		<h5>Usuario</h5>
-                          <input name='username' ID="username" type="text" class="input">
+                    <input name='username' ID="username" type="text" class="input">
            		   </div>
            		</div>
            		<div class="input-div pass">
