@@ -15,8 +15,6 @@
         <!-- ===== CSS ===== -->
         <link rel="stylesheet" href="css/admin.css">
         <link rel="stylesheet" href="css/registro.css">
-        
-        
 
         <title>Sidebar menu responsive</title>
     </head>
@@ -52,7 +50,7 @@
                             <span class="nav__name">Alumnos</span>
                         </a>
                         
-                        <a href="#" class="nav__link">
+                        <a href="#" class="nav__link" id="ingresoMaestro">
                             <i class='bx bx-book-alt nav__icon'></i>
                             <span class="nav__name">Cursos</span>
                         </a>

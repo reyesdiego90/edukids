@@ -13,7 +13,10 @@ if(isset($_GET['cerrar_sesion'])){
 if(isset($_SESSION['rol'])){
   switch($_SESSION['rol']){
       case 1:
-          header('location: admin.php');
+        header('location: admin.php');
+      break;
+      case 3:
+        header('location: PantallaAlumno.php'); 
       break;
 
 
@@ -45,7 +48,7 @@ if(isset($_SESSION['rol'])){
         case 1:
           header('location: admin.php');  
         break;
-        case 2:
+        case 3:
           header('location: PantallaAlumno.php'); 
         break;
         
@@ -73,7 +76,7 @@ if(isset($_SESSION['rol'])){
 			<img class="wave" src="Images/Fondos/manos.jpg">
 		</div>
 		<div class="login-content">
-			<form class="content">
+			<form class="content" method="POST">
 				<img src="Images/Logos/LogoEdu.jpg">
 				<h2 class="title">BIENVENIDO</h2>
            		<div class="input-div one">
