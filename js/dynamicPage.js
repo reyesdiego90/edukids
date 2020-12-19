@@ -18,4 +18,14 @@ $(document).ready(function() {
           }
       });
   });
+
+  $('#ingresoMaestro').on('click', function(){
+      $.ajax({
+          type: "POST",
+          url: "./Components/maestro.php",
+          success: function(response) {
+              $('#div-results').html(response);
+          }
+      });
+  });
 });

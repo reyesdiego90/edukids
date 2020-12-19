@@ -77,6 +77,11 @@ h1 {
   width: 45%;
   color:black;
 }
+.name3 {
+	float: right;
+  width: 45%;
+  color:black;
+}
 
 input[type='text'], [type='email'], select, textarea {
 	background: none;

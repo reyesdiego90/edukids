@@ -13,7 +13,10 @@ if(isset($_GET['cerrar_sesion'])){
 if(isset($_SESSION['rol'])){
   switch($_SESSION['rol']){
       case 1:
-          header('location: admin.php');
+        header('location: admin.php');
+      break;
+      case 3:
+        header('location: PantallaAlumno.php'); 
       break;
 
 
@@ -45,7 +48,9 @@ if(isset($_SESSION['rol'])){
         case 1:
           header('location: admin.php');  
         break;
-   
+        case 3:
+          header('location: PantallaAlumno.php'); 
+        break;
         
         default;
       }
