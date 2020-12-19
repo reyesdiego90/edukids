@@ -49,12 +49,11 @@
         <i class="fa fa-bars nav_btn"></i>
       </div>
       <div class="mobile_nav_items">
-        <a href="#"><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
-        <a href="#"><i class="fas fa-book"></i><span>CURSOS</span></a>
-        <a href="#"><i class="fas fa-calendar-alt"></i><span>CALENDARIO</span></a>
-        <a href="#"><i class="fas fa-th"></i><span>TAREAS</span></a>
-        <a href="#"><i class="fas fa-info-circle"></i><span>CALIFICACIONES</span></a>
-        <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+      <a href="#"><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
+      <a href="#"><i class="fas fa-book"></i><span>CURSOS</span></a>
+      <a href="#"><i class="far fa-file-alt"></i><span>TAREAS</span></a>
+      <a href="#"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
+      <a href="#"><i class="fas fa-cog"></i><span>AJUSTES</span></a>
       </div>
     </div>
     <!--mobile navigation bar end-->
@@ -66,10 +65,9 @@
       </div>
       <a href="#"><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
       <a href="#"><i class="fas fa-book"></i><span>CURSOS</span></a>
-      <a href="#"><i class="fas fa-th"></i><span>TAREAS</span></a>
-      <a href="#"><i class="far fa-calendar-alt"></i></i><span>CALIFICACIONES</span></a>
-      <a href="#"><i class="fas fa-info-circle"></i><span>About</span></a>
-      <a href="#"><i class="fas fa-sliders-h"></i><span>Settings</span></a>
+      <a href="#"><i class="far fa-file-alt"></i><span>TAREAS</span></a>
+      <a href="#"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
+      <a href="#"><i class="fas fa-cog"></i><span>AJUSTES</span></a>
     </div>
     <!--sidebar end-->
 

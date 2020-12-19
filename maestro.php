@@ -1,11 +1,27 @@
- 
-<div class="container">
-</br>
-</br>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div id="container">
+        <!-- ===== BOX ICONS ===== -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css' rel='stylesheet'>
+        <link href='https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="css/registro-maestro.css">
+        
+        
+
+        <title>Maestro</title>
+    </head>
+    <body>
+    <div id="container">
 </br>
-  <h1>&bull; Ingreso Alumnos &bull;</h1>
+  <h1>&bull; Ingreso Maestro &bull;</h1>
+</br>
   <div class="underline">
   </div>
 
@@ -18,10 +34,6 @@
       <label for="Segundo Nombre"></label>
       <input type="text" placeholder="Segundo Nombre" name="nombre2" id="segundoNombre" required>
     </div>
-    <div class="name">
-      <label for="Tercer Nombre"></label>
-      <input type="text" placeholder="Tercer Nombre" name="nombre3" id="tercerNombre" required>
-    </div>
     
     <div class="email">
       <label for="Primer Apellido"></label>
@@ -32,13 +44,17 @@
       <input type="text" placeholder="Segundo Apellido" name="apellido2" id="segundoApellido" required>
     </div>
     <div class="telephone">
+      <label for="email"></label>
+      <input type="text" placeholder="Correo Electronico" name="email" id="email" required>
+    </div>
+    <div class="telephone">
       <label for="Number"></label>
       <input type="text" placeholder="Telefono" name="tel" id="tel" required>
     </div>
     <div class="subject">
       <label for="Grado"></label>
       <select placeholder="Seccion" name="Grado" id="Grado" required>
-        <option disabled hidden selected>Grado</option>
+        <option disabled hidden selected>Grado A Cargo</option>
         <option>Nurserey</option>
         <option>Pre-Kinder</option>
         <option>Kinder</option>
@@ -61,5 +77,6 @@
       <input type="submit" value="Guardar" id="guardar" class="btn btn-danger" />
     </div>
   </form><!-- // End form -->
-</div><!-- // End #container -->
 </div>
+    </body>
+</html>
