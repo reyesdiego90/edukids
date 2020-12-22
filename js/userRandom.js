@@ -1,12 +1,11 @@
-const minimo = 0;
-const max = 200;
-
 
 function getRandomArbitrary(minimo, max) {
   return parseInt(Math.random() * (max - minimo) + minimo);
 }
 
 function nombreRandomUsuario(){
+  const minimo = 0;
+  const max = 200;
   const Usuario = document.getElementById('usuario');
   const primerNombre = new String(document.getElementById("primerNombre").value);
   const primerApellido = new String(document.getElementById('primerApellido').value);
