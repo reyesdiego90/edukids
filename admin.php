@@ -28,7 +28,7 @@
 
 
 
-  <link rel="stylesheet" href="css/datatable.css">
+  <link rel="stylesheet" href="css/registro.css">
   <link rel="stylesheet" href="css/style2.css">
 
   <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js">
@@ -100,6 +100,8 @@
 
     </div>
   </div>
+  
+  
 
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
