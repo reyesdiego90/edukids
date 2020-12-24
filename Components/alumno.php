@@ -1,65 +1,52 @@
- 
+<?php 
+  include_once '../conexion.php';
+?> 
+
+
 <div class="container">
 </br>
 </br>
-
-<div id="container">
-</br>
-  <h1>&bull; Ingreso Alumnos &bull;</h1>
-  <div class="underline">
-  </div>
-
-  <form action="#" method="post" id="contact_form">
-    <div class="name">
-      <label for="Primer Nombre"></label>
-      <input type="text" placeholder="Primer Nombre" name="nombre1" id="primerNombre" required>
-    </div>
-    <div class="email">
-      <label for="Segundo Nombre"></label>
-      <input type="text" placeholder="Segundo Nombre" name="nombre2" id="segundoNombre" required>
-    </div>
-    <div class="name">
-      <label for="Tercer Nombre"></label>
-      <input type="text" placeholder="Tercer Nombre" name="nombre3" id="tercerNombre" required>
-    </div>
-    
-    <div class="email">
-      <label for="Primer Apellido"></label>
-      <input type="text" placeholder="Primer Apellido" name="apellido1" id="primerApellido" required>
-    </div>
-    <div class="name">
-      <label for="Segundo Apellido"></label>
-      <input type="text" placeholder="Segundo Apellido" name="apellido2" id="segundoApellido" required>
-    </div>
-    <div class="telephone">
-      <label for="Number"></label>
-      <input type="text" placeholder="Telefono" name="tel" id="tel" required>
-    </div>
-    <div class="subject">
-      <label for="Grado"></label>
-      <select placeholder="Seccion" name="Grado" id="Grado" required>
-        <option disabled hidden selected>Grado</option>
-        <option>Nurserey</option>
-        <option>Pre-Kinder</option>
-        <option>Kinder</option>
-        <option>Preparatoria</option>
-        <option>Primero</option>
-        <option>Segundo</option>
-        <option>Tercero</option>
-        <option>Cuarto</option>
-        <option>Quinto</option>
-        <option>Sexto</option>
-        <option>Primero Basico</option>
-        <option>Segundo Basico</option>
-        <option>Tercero Basico</option>
-      </select>
-    </div>
-  
-    
-   
-    <div class="submit">
-      <input type="submit" value="Guardar" id="guardar" class="btn btn-danger" />
-    </div>
-  </form><!-- // End form -->
-</div><!-- // End #container -->
+<table id="example" class="table table-striped table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Primer Nombre</th>
+                <th>Segundo Nombre</th>
+                <th>Primer Apellido</th>
+                <th>Segundo Apellido</th>
+                <th>Telefono</th>
+                <th>Estado</th>
+                <th>Sección</th>
+                <th>Grado</th>
+                <th>Usuario</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php
+              $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+              $result = mysqli_query($base, 
+              "SELECT alumno.id_alumno, alumno.primer_nombre, alumno.segundo_nombre, alumno.primer_apellido, alumno.segundo_apellido, alumno.telefono, estado.estado, seccion.seccion, grado.nombre_grado, nivel.nombre_nivel, usuario.nombre_usuario FROM alumno
+              INNER JOIN grado ON grado.id_grado = alumno.GRADO_id_grado
+              INNER JOIN nivel ON grado.NIVEL_id_nivel = nivel.id_nivel
+              INNER JOIN seccion ON seccion.id_seccion = alumno.SECCION_id_seccion
+              INNER JOIN estado ON alumno.ESTADO_id_estado = estado.id_estado
+              INNER JOIN usuario ON alumno.USUARIO_id_usuario = usuario.id_usuario");
+              while($res = mysqli_fetch_assoc($result)){
+            ?>
+            <tr>
+                <td><?php echo $res['primer_nombre']?></td>
+                <td><?php echo $res['segundo_nombre']?></td>
+                <td><?php echo $res['primer_apellido']?></td>
+                <td><?php echo $res['segundo_apellido']?></td>
+                <td><?php echo $res['telefono']?></td>
+                <td><?php echo $res['estado']?></td>
+                <td><?php echo $res['seccion']?></td>
+                <td><?php echo $res['nombre_grado'].' '.$res['nombre_nivel']?></td>
+                <td><?php echo $res['nombre_usuario']?></td>
+            </tr>
+            <?php
+              }
+            ?>
+        </tfoot>
+    </table>
 </div>
+
