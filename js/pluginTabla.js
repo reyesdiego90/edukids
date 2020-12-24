@@ -18,7 +18,7 @@ $(document).ready(function () {
           $('body').removeClass('modal-open'); //eliminamos la clase del body para poder hacer scroll
           $('.modal-backdrop').remove();
           $('#div-results').load('Components/administrador/dashboardAlumnos.php');
-          alert("alumno ingresado correctamente");
+          alertify.success('Alumno ingresado correctamente');
         } else {
           alert("error al ingresar datos");
         }

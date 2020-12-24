@@ -17,12 +17,12 @@
         <th>Grado</th>
         <th>Usuario</th>
         <th>Editar</th>
-        <th>Eliminar</th>
       </tr>
     </thead>
     <tbody>
       <?php
         $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+        mysqli_set_charset($base, 'utf8'); 
         $result = mysqli_query($base, 
         "SELECT alumno.id_alumno, alumno.primer_nombre, alumno.segundo_nombre, alumno.primer_apellido, alumno.segundo_apellido, alumno.telefono, estado.id_estado ,estado.estado, seccion.seccion, grado.id_grado ,grado.nombre_grado, nivel.nombre_nivel, usuario.nombre_usuario FROM alumno
         INNER JOIN grado ON grado.id_grado = alumno.GRADO_id_grado
@@ -61,13 +61,6 @@
             </span>
           </button>
         </td>
-        <td>
-          <button class="btn btn-danger" data-toggle="modal" data-target="">
-            <span class="material-icons">
-              clear
-            </span>
-          </button>
-        </td>
       </tr>
       <?php
       }
@@ -78,10 +71,11 @@
   </table>
 </div>
 
-
-
 <!-- Contenedor para poder agregar alumnos -->
 <div id="addEstudentModal" class="modal fade">
+  <div class="alert alert-success fade" role="alert">
+    This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+  </div>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -119,7 +113,6 @@
             <select placeholder="Seccion" name="grado" id="Grado" required>
               <option disabled hidden selected>Grado</option>
               <?php
-                      $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
                       $result = mysqli_query($base, 
                       "SELECT id_grado, nombre_grado, nombre_nivel 
                       FROM grado
@@ -144,7 +137,7 @@
   </div>
 </div>
 
-
+<!-- Contenedor para poder editar alumnos -->
 <div id="editStudent" class="modal fade">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
@@ -233,5 +226,4 @@
 
 
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
-
 <script src="js/pluginTabla.js"></script>

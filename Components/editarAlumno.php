@@ -16,14 +16,4 @@
   WHERE id_alumno = $id_alumno";
   
   echo $result = mysqli_query($base, $actualizacion);
-
-  // idEstudiante=2
-  // &nombre1Ac=carlos
-  // &nombre2Ac=daniel
-  // &apellido1Ac=ortega
-  // &apellido2Ac=HINEZTROZA
-  // &usuarioRAc=cortegah103
-  // &telAc=43423424
-  // &estadoAc=1
-  // &gradoAc=8
 ?>
