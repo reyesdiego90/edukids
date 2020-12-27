@@ -62,7 +62,7 @@
             <a href="#" id="dashboard"><span class="fa fa-home mr-3"></span> Home</a>
           </li>
           <li>
-            <a href="#"><span class="fa fa-user mr-3"></span> About</a>
+            <a href="#" id="maestroDash"><span class="fa fa-user mr-3"></span> About</a>
           </li>
           <li>
             <a href="#"><span class="fa fa-briefcase mr-3"></span> Works</a>

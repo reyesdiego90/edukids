@@ -8,5 +8,15 @@ $(document).ready(function() {
         }
     });
   }); 
+  $('#maestroDash').on('click', function(){
+    $.ajax({
+        type: "POST",
+        url: "./Components/administrador/dashBoardProfesor.php",
+        success: function(response) {
+            $('#div-results').html(response);
+        }
+    });
+  }); 
+
 
 });

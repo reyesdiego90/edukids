@@ -28,6 +28,30 @@ $(document).ready(function () {
     return false;
   });
 
+  $('#guardarMaestro').click(function (e) {
+    e.preventDefault();
+    const dato = $('#containerMaestro').serialize();
+    console.log(dato);
+    $.ajax({
+      type: 'POST',
+      url: 'Components/RegistroMaestro.php',
+      data: dato,
+      success: function (r) {
+        if (r == 1) {
+          $("#div-results").modal('hide'); //ocultamos el modal
+          $('body').removeClass('modal-open'); //eliminamos la clase del body para poder hacer scroll
+          $('.modal-backdrop').remove();
+          $('#div-results').load('Components/administrador/dashBoardProfesor.php');
+          alertify.success('Alumno ingresado correctamente');
+        } else {
+          alert("error al ingresar datos "+dato);
+        }
+      }
+    });
+
+    return false;
+  });
+
   $('#actualizarDatos').click(function(e){
     e.preventDefault();
     var datos = $('#container2').serialize();

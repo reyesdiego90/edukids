@@ -1,7 +1,11 @@
+
 <!-- Contenedor para poder ingresar Alumnos -->
 <div>
-  <button id="btnNuevo" type="button" class="btn btn-success" data-toggle="modal" data-target="#addEstudentModal">
-    Nuevo
+  <button id="btnNuevo" type="button" class="btn btn-success d-flex justify-content-center" data-toggle="modal" data-target="#addEstudentModal">
+    Nuevo 
+    <span class="material-icons">
+      add
+    </span>
   </button>
   <table id="registroTabla" class="table table-striped table-bordered" style="width:100%">
     <thead>
@@ -73,9 +77,6 @@
 
 <!-- Contenedor para poder agregar alumnos -->
 <div id="addEstudentModal" class="modal fade">
-  <div class="alert alert-success fade" role="alert">
-    This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-  </div>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
