@@ -22,7 +22,7 @@
     </thead>
     <tbody>
       <?php
-        $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+        $base = mysqli_connect("127.0.0.1", "root", "toor", "edukids");
         mysqli_set_charset($base, 'utf8'); 
         $result = mysqli_query($base, "SELECT id_maestro, primer_nombre,
         segundo_nombre, primer_apellido,
@@ -32,7 +32,6 @@
         INNER JOIN estado ON maestro.ESTADO_id_estado = estado.id_estado
         INNER JOIN usuario ON maestro.USUARIO_id_usuario = usuario.id_usuario");
         while($res = mysqli_fetch_assoc($result)){
-
       ?>
       <tr>
         <td><?php echo $res['id_maestro']?></td>

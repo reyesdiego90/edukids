@@ -5,13 +5,13 @@ $(document).ready(function () {
     },
   });
 
-  $('#guardar').click(function (e) {
-    e.preventDefault();
-    var dato = $('#container').serialize();
+  $('#guardarAlumno').click(function (e) {
+    e.preventDefault();    
+    const datosAlumno = $('#containerAlumno').serialize();
     $.ajax({
       type: 'POST',
-      url: 'Components/RegistroAlumno.php',
-      data: dato,
+      url: './Components/RegistroAlumno.php',
+      data: datosAlumno,
       success: function (r) {
         if (r == 1) {
           $("#div-results").modal('hide'); //ocultamos el modal
@@ -20,7 +20,7 @@ $(document).ready(function () {
           $('#div-results').load('Components/administrador/dashboardAlumnos.php');
           alertify.success('Alumno ingresado correctamente');
         } else {
-          alert("error al ingresar datos");
+          alert("error al ingresar datos"+datosAlumno);
         }
       }
     });

@@ -10,7 +10,7 @@ class Database{
 
     public function __construct(){
         $this->host = '127.0.0.1';
-        $this->db = 'Edukids';
+        $this->db = 'edukids';
         $this->user = 'root';
         $this->password = 'toor';
     }

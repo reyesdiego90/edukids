@@ -22,7 +22,6 @@
 
   $ingresoUsuario = "INSERT INTO maestro(primer_nombre, segundo_nombre, primer_apellido, segundo_apellido, USUARIO_id_usuario, correo, telefono, ESTADO_id_estado) VALUES('$primerNombre', '$segundoNombre', '$primerApellido', '$segundoApellio', $id_usuario, '$correo' ,'$telefono', 1)";
     
-    
   
   echo $result = mysqli_query($base, $ingresoUsuario);
 
