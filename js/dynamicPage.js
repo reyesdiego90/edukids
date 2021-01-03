@@ -17,6 +17,15 @@ $(document).ready(function() {
         }
     });
   }); 
+  $('#agregarCursos').on('click', function(){
+    $.ajax({
+        type: "POST",
+        url: "./Components/administrador/asignacionCursos.php",
+        success: function(response) {
+            $('#div-results').html(response);
+        }
+    });
+  }); 
 
 
 });

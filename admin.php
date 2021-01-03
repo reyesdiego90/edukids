@@ -65,7 +65,7 @@
             <a href="#" id="maestroDash"><span class="fa fa-user mr-3"></span> About</a>
           </li>
           <li>
-            <a href="#"><span class="fa fa-briefcase mr-3"></span> Works</a>
+            <a href="#" id="agregarCursos"><span class="fa fa-briefcase mr-3"></span> Works</a>
           </li>
           <li>
             <a href="#"><span class="fa fa-sticky-note mr-3"></span> Blog</a>

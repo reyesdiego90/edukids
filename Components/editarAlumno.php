@@ -9,6 +9,7 @@
   $telefono = $_POST['telAc'];
   $estado = $_POST['estadoAc'];
   $grado = $_POST['gradoAc'];
+  
   $actualizacion = "UPDATE alumno SET primer_nombre='$primer_nombre',
   segundo_nombre='$segundo_nombre', primer_apellido='$primer_apellido',
   segundo_apellido='$segundo_apellido', telefono= '$telefono',

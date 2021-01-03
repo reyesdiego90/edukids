@@ -72,6 +72,29 @@ $(document).ready(function () {
       }
     });
   })
+
+  $('#guardarCurso').click(function(e){
+    e.preventDefault();
+    var datos = $('#addCourse').serialize();
+    $.ajax({
+      type: 'POST',
+      url: 'Components/agregarCurso.php',
+      data: datos,
+      success: function (r) {
+        if (r == 1) {
+          $("#div-results").modal('hide'); //ocultamos el modal
+          $('body').removeClass('modal-open'); //eliminamos la clase del body para poder hacer scroll
+          $('.modal-backdrop').remove();
+          $('#div-results').load('Components/administrador/asignacionCursos.php');
+          alert("alumno actualizado");
+        } else {
+          alert("error al ingresar datos "+r);
+        }
+      }
+    });
+  })
+
+  
 });
 
 function editarAlumno(datos) {
