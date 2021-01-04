@@ -94,6 +94,27 @@ $(document).ready(function () {
     });
   })
 
+  $('#courseAssignment').click(function(e){
+    e.preventDefault();
+    var datos = $('#assigment').serialize();
+    $.ajax({
+      type: 'POST',
+      url: 'Components/asignarCurso.php',
+      data: datos,
+      success: function (r) {
+        if (r == 1) {
+          $("#div-results").modal('hide'); //ocultamos el modal
+          $('body').removeClass('modal-open'); //eliminamos la clase del body para poder hacer scroll
+          $('.modal-backdrop').remove();
+          $('#div-results').load('Components/administrador/asignacionCursos.php');
+          alert("curso asignado correctamente");
+        } else {
+          alert("error al ingresar datos "+r);
+        }
+      }
+    });
+  })
+
   
 });
 
