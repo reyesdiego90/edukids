@@ -22,7 +22,7 @@
     </thead>
     <tbody>
       <?php
-        $base = mysqli_connect("127.0.0.1", "root", "toor", "edukids");
+        $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "edukids");
         mysqli_set_charset($base, 'utf8'); 
         $result = mysqli_query($base, "SELECT id_maestro, primer_nombre,
         segundo_nombre, primer_apellido,

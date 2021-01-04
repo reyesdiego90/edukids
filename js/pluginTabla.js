@@ -5,11 +5,6 @@ $(document).ready(function () {
     },
   });
 
-<<<<<<< HEAD
-  $('#guardar').click(function (e) {
-
-    var dato = $('#container').serialize();
-=======
   $('#guardarAlumno').click(function (e) {
     e.preventDefault();    
     const datosAlumno = $('#containerAlumno').serialize();
@@ -37,7 +32,6 @@ $(document).ready(function () {
     e.preventDefault();
     const dato = $('#containerMaestro').serialize();
     console.log(dato);
->>>>>>> ef46e0a24244f39a4849f8f9eefa9f867fa021a3
     $.ajax({
       type: 'POST',
       url: 'Components/RegistroMaestro.php',
