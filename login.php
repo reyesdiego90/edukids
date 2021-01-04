@@ -18,8 +18,6 @@ if(isset($_SESSION['rol'])){
       case 3:
         header('location: PantallaAlumno.php'); 
       break;
-
-
       default:
   }
 }

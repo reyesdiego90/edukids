@@ -5,13 +5,18 @@ $(document).ready(function () {
     },
   });
 
+<<<<<<< HEAD
   $('#guardar').click(function (e) {
 
     var dato = $('#container').serialize();
+=======
+  $('#guardarAlumno').click(function (e) {
+    e.preventDefault();    
+    const datosAlumno = $('#containerAlumno').serialize();
     $.ajax({
       type: 'POST',
-      url: 'Components/RegistroAlumno.php',
-      data: dato,
+      url: './Components/RegistroAlumno.php',
+      data: datosAlumno,
       success: function (r) {
         if (r == 1) {
           $("#div-results").modal('hide'); //ocultamos el modal
@@ -20,7 +25,32 @@ $(document).ready(function () {
           $('#div-results').load('Components/administrador/dashboardAlumnos.php');
           alertify.success('Alumno ingresado correctamente');
         } else {
-          alert("error al ingresar datos");
+          alert("error al ingresar datos"+datosAlumno);
+        }
+      }
+    });
+
+    return false;
+  });
+
+  $('#guardarMaestro').click(function (e) {
+    e.preventDefault();
+    const dato = $('#containerMaestro').serialize();
+    console.log(dato);
+>>>>>>> ef46e0a24244f39a4849f8f9eefa9f867fa021a3
+    $.ajax({
+      type: 'POST',
+      url: 'Components/RegistroMaestro.php',
+      data: dato,
+      success: function (r) {
+        if (r == 1) {
+          $("#div-results").modal('hide'); //ocultamos el modal
+          $('body').removeClass('modal-open'); //eliminamos la clase del body para poder hacer scroll
+          $('.modal-backdrop').remove();
+          $('#div-results').load('Components/administrador/dashBoardProfesor.php');
+          alertify.success('Alumno ingresado correctamente');
+        } else {
+          alert("error al ingresar datos "+dato);
         }
       }
     });
@@ -48,6 +78,50 @@ $(document).ready(function () {
       }
     });
   })
+
+  $('#guardarCurso').click(function(e){
+    e.preventDefault();
+    var datos = $('#addCourse').serialize();
+    $.ajax({
+      type: 'POST',
+      url: 'Components/agregarCurso.php',
+      data: datos,
+      success: function (r) {
+        if (r == 1) {
+          $("#div-results").modal('hide'); //ocultamos el modal
+          $('body').removeClass('modal-open'); //eliminamos la clase del body para poder hacer scroll
+          $('.modal-backdrop').remove();
+          $('#div-results').load('Components/administrador/asignacionCursos.php');
+          alert("alumno actualizado");
+        } else {
+          alert("error al ingresar datos "+r);
+        }
+      }
+    });
+  })
+
+  $('#courseAssignment').click(function(e){
+    e.preventDefault();
+    var datos = $('#assigment').serialize();
+    $.ajax({
+      type: 'POST',
+      url: 'Components/asignarCurso.php',
+      data: datos,
+      success: function (r) {
+        if (r == 1) {
+          $("#div-results").modal('hide'); //ocultamos el modal
+          $('body').removeClass('modal-open'); //eliminamos la clase del body para poder hacer scroll
+          $('.modal-backdrop').remove();
+          $('#div-results').load('Components/administrador/asignacionCursos.php');
+          alert("curso asignado correctamente");
+        } else {
+          alert("error al ingresar datos "+r);
+        }
+      }
+    });
+  })
+
+  
 });
 
 function editarAlumno(datos) {

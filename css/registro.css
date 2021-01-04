@@ -36,6 +36,20 @@ textarea {
   overflow: auto;
 }
 
+.curso-botones__Orden {
+  display: flex;
+}
+
+.curso-botones__Orden button {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.curso-botones__Orden button span {
+  margin-left: 15px;
+}
+
 #container {
   border: solid 3px #a73535;
   max-width: 768px;

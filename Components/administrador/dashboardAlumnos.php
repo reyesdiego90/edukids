@@ -1,7 +1,11 @@
+
 <!-- Contenedor para poder ingresar Alumnos -->
 <div>
-  <button id="btnNuevo" type="button" class="btn-hover color-1" data-toggle="modal" data-target="#addEstudentModal">
-    Nuevo
+  <button id="btnNuevo" type="button" class="btn btn-success d-flex justify-content-center" data-toggle="modal" data-target="#addEstudentModal">
+    Nuevo 
+    <span class="material-icons">
+      add
+    </span>
   </button>
   </br>
   <hr>
@@ -78,9 +82,6 @@
 
 <!-- Contenedor para poder agregar alumnos -->
 <div id="addEstudentModal" class="modal fade">
-  <div class="alert alert-success fade" role="alert">
-    This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-  </div>
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
@@ -88,21 +89,21 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form id="container" name="formulario">
+      <form id="containerAlumno" name="formulario" method="POST">
         <h1>&bull; Ingreso Alumnos &bull;</h1>
         <div class="modal-body">
           <div class="name">
             <label for="Primer Nombre"></label>
-            <input type="text" placeholder="Primer Nombre" name="nombre1" id="primerNombre" required>
+            <input type="text" placeholder="Primer Nombre" name="nombre1Alumno" id="primerNombre" autocomplete='off' required>
           </div>
           <div class="email">
             <label for="Segundo Nombre"></label>
-            <input type="text" placeholder="Segundo Nombre" name="nombre2" id="segundoNombre" required>
+            <input type="text" placeholder="Segundo Nombre" name="nombre2" id="segundoNombre" autocomplete='off' required>
           </div>
 
           <div class="name">
             <label for="Primer Apellido"></label>
-            <input type="text" placeholder="Primer Apellido" name="apellido1" id="primerApellido" required>
+            <input type="text" placeholder="Primer Apellido" name="apellido1" id="primerApellido" autocomplete='off' required>
           </div>
           <div class="email">
             <label for="Segundo Apellido"></label>
@@ -134,7 +135,7 @@
         </div>
         <div class="modal-footer">
           <div class="submit">
-            <input type="submit" value="Guardar" id="guardar" class="btn btn-danger" onclick="nombreRandomUsuario()" />
+            <input type="submit" value="Guardar" id="guardarAlumno" class="btn btn-danger" onclick="nombreRandomUsuario()" />
           </div>
         </div>
       </form>
@@ -151,7 +152,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form id="container2" name="formulario">
+      <form id="container2" name="formularioM">
         <h1>&bull; Actualizar Alumno &bull;</h1>
         <div class="modal-body">
           <input type="hidden" id="idAlumno" name='idEstudiante'>
@@ -224,11 +225,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
 
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
 <script src="js/pluginTabla.js"></script>
