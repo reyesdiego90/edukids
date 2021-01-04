@@ -1,11 +1,8 @@
 
 <!-- Contenedor para poder ingresar Alumnos -->
 <div>
-  <button id="btnNuevo" type="button" class="btn btn-success d-flex justify-content-center" data-toggle="modal" data-target="#addEstudentModal">
+  <button id="btnNuevo" type="button" class="btn-hover color-1" data-toggle="modal" data-target="#addEstudentModal">
     Nuevo 
-    <span class="material-icons">
-      add
-    </span>
   </button>
   </br>
   <hr>

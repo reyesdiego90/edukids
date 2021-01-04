@@ -1,34 +1,28 @@
 <div>
   <div class="curso-botones__Orden">
 
-    <button id="btnNuevo" type="button" class="btn btn-success d-flex justify-content-center" data-toggle="modal"
+    <button id="btnNuevo" type="button" class="btn-hover color-1" data-toggle="modal"
       data-target="#agregarCurso">
       Agregar Curso
-      <span class="material-icons">
-        library_books
-      </span>
     </button>
     
-    <button id="btnNuevo" type="button" class="btn btn-success d-flex justify-content-center" data-toggle="modal"
+    <button id="btnNuevo" type="button" class="btn-hover color-1" data-toggle="modal"
       data-target="#asignarMaestro">
       Asignar Curso
-      <span class="material-icons">
-        how_to_reg
-      </span>
     </button>
 
-    <button id="btnNuevo" type="button" class="btn btn-success d-flex justify-content-center" data-toggle="modal"
+    <button id="btnNuevo" type="button" class="btn-hover color-1" data-toggle="modal"
       data-target="#asignarMaestro">
       Mostrar Cursos
-      <span class="material-icons">
-        playlist_add_check
-      </span>
     </button>
 
   </div>
+  <hr>
+  
+  </hr>
 
   <table id="registroTabla" class="table table-striped table-bordered" style="width:100%">
-    <thead>
+    <thead class="thead-dark">
       <tr>
         <th>Maestro</th>
         <th>Curso</th>

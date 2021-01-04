@@ -1,12 +1,13 @@
 <div>
-  <button id="btnNuevo" type="button" class="btn btn-success d-flex justify-content-center" data-toggle="modal" data-target="#agregarMaestro">
+  <button id="btnNuevo" type="button" class="btn-hover color-1" data-toggle="modal" data-target="#agregarMaestro">
     Nuevo 
-    <span class="material-icons">
-      add
-    </span>
   </button>
+</br>
+<hr>
+  
+  </hr>
   <table id="registroTabla" class="table table-striped table-bordered" style="width:100%">
-    <thead>
+    <thead class="thead-dark">
       <tr>
         <th>id</th>
         <th>Primer Nombre</th>
@@ -44,7 +45,7 @@
         <td><?php echo $res['estado']?></td>
         <td><?php echo $res['nombre_usuario']?></td>
         <td>
-          <button class="btn btn-warning" data-toggle="modal" data-target="#editStudent"
+          <button class="btn btn-info" data-toggle="modal" data-target="#editStudent"
             onclick="editarAlumno('<?php echo $datos; ?>')">
             <span class="material-icons">
               create
