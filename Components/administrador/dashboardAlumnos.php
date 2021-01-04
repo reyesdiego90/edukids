@@ -1,10 +1,15 @@
 <!-- Contenedor para poder ingresar Alumnos -->
 <div>
-  <button id="btnNuevo" type="button" class="btn btn-success" data-toggle="modal" data-target="#addEstudentModal">
+  <button id="btnNuevo" type="button" class="btn-hover color-1" data-toggle="modal" data-target="#addEstudentModal">
     Nuevo
   </button>
+  </br>
+  <hr>
+  
+  </hr>
+</br>
   <table id="registroTabla" class="table table-striped table-bordered" style="width:100%">
-    <thead>
+    <thead class="thead-dark">
       <tr>
         <th>id</th>
         <th>Primer Nombre</th>
@@ -21,7 +26,7 @@
     </thead>
     <tbody>
       <?php
-        $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+        $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
         mysqli_set_charset($base, 'utf8'); 
         $result = mysqli_query($base, 
         "SELECT alumno.id_alumno, alumno.primer_nombre, alumno.segundo_nombre, alumno.primer_apellido, alumno.segundo_apellido, alumno.telefono, estado.id_estado ,estado.estado, seccion.seccion, grado.id_grado ,grado.nombre_grado, nivel.nombre_nivel, usuario.nombre_usuario FROM alumno
@@ -54,7 +59,7 @@
         <td><?php echo $res['nombre_grado'].' '.$res['nombre_nivel']?></td>
         <td><?php echo $res['nombre_usuario']?></td>
         <td>
-          <button class="btn btn-warning" data-toggle="modal" data-target="#editStudent"
+          <button class="btn btn-info" data-toggle="modal" data-target="#editStudent"
             onclick="editarAlumno('<?php echo $datos; ?>')">
             <span class="material-icons">
               create

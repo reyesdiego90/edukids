@@ -8202,7 +8202,7 @@ h1, h2, h3, h4, h5,
 #sidebar {
   min-width: 270px;
   max-width: 270px;
-  background: #3445b4;
+  background: #003949;
   color: #fff;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -8236,7 +8236,7 @@ h1, h2, h3, h4, h5,
       color: rgba(255, 255, 255, 0.6);
       border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
       #sidebar ul li a span {
-        color: #44bef1; }
+        color: #0DEAEA ; }
       #sidebar ul li a:hover {
         color: #fff; }
     #sidebar ul li.active > a {
@@ -8283,7 +8283,8 @@ h1, h2, h3, h4, h5,
           -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
           transform: rotate(45deg);
-          background: #3445b4;
+          background: rgb(4,1,54);
+          background: linear-gradient(90deg, rgba(4,1,54,1) 0%, rgba(5,5,85,1) 35%, rgba(2,131,157,1) 100%);
           border-radius: 10px; }
         #sidebar .custom-menu .btn.btn-primary:hover, #sidebar .custom-menu .btn.btn-primary:focus {
           background: transparent !important;
@@ -8312,13 +8313,43 @@ a[data-toggle="collapse"] {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
+ 
 
-.btn.btn-primary {
-  background: #3445b4;
-  border-color: #3445b4; }
-  .btn.btn-primary:hover, .btn.btn-primary:focus {
-    background: #3445b4 !important;
-    border-color: #3445b4 !important; }
+  .btn-hover {
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 40px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #04587c, #2997ff, #47c5ff, #339bfd);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
 
 .footer p {
   color: rgba(255, 255, 255, 0.5); }

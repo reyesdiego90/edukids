@@ -22,7 +22,7 @@
         </thead>
         <tbody>
             <?php
-              $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+              $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
               $result = mysqli_query($base, 
               "SELECT alumno.id_alumno, alumno.primer_nombre, alumno.segundo_nombre, alumno.primer_apellido, alumno.segundo_apellido, alumno.telefono, estado.estado, seccion.seccion, grado.nombre_grado, nivel.nombre_nivel, usuario.nombre_usuario FROM alumno
               INNER JOIN grado ON grado.id_grado = alumno.GRADO_id_grado

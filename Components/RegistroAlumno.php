@@ -1,7 +1,7 @@
 <?php
   require_once '../conexion.php';
 
-  $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+  $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
   $user = $_POST['usuarioR'];
   $primerNombre = strtolower($_POST['nombre1']);
   $segundoNombre = strtolower($_POST['nombre2']);

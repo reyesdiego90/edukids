@@ -6,7 +6,7 @@ $(document).ready(function () {
   });
 
   $('#guardar').click(function (e) {
-    e.preventDefault();
+
     var dato = $('#container').serialize();
     $.ajax({
       type: 'POST',
