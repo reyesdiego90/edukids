@@ -32,7 +32,7 @@
     </thead>
     <tbody>
       <?php
-        $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
+        $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
         mysqli_set_charset($base, 'utf8');
         $result =  mysqli_query($base, 'SELECT id_asignacion, id_curso, nombre_curso, id_grado, nombre_grado, nombre_nivel, primer_nombre, segundo_nombre, primer_apellido, segundo_apellido FROM asignacion_curso
         INNER JOIN curso ON curso.id_curso = asignacion_curso.CURSO_id_curso

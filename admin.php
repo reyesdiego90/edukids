@@ -98,7 +98,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/dynamicPage.js"></script>
-  <script src="js/datatable.js"></script>
   <script src="js/userRandom.js"></script>
   <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 

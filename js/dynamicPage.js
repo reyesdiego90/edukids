@@ -27,5 +27,25 @@ $(document).ready(function() {
     });
   }); 
 
+  $("#anunciosMaestro").on('click', function(){
+    $.ajax({
+      type: "POST",
+      url: "./Components/Maestro/anuncioMaestro.php",
+      success: function(response) {
+          $('#div-results').html(response);
+      }
+    });
+  })
+
+  $("#mostrarDoc").on('click', function(){
+    $.ajax({
+      type: "POST",
+      url: "./Components/Maestro/mostrarTareas.php",
+      success: function(response) {
+          $('#div-results').html(response);
+      }
+    });
+  })
+
 
 });
