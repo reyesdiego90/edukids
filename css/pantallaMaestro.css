@@ -271,12 +271,65 @@ body{
 }
 
 .box{
-  width: 500px;
-  height: 250px;
+  width: 600px;
+  height: 220px;
   padding: 20px;
   margin:20px auto;
   background-color: #0CAD8D;
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.box #titulo {
+  color: #ffffff;
+   font-family: 'Roboto',sans-serif;
+    font-size: 30px; 
+    font-weight: 800; 
+    line-height: 36px; 
+    margin: 0 0 24px;
+     text-align: center;
+}
+
+.box .sub {
+  color:black;
+  font-family: 'Roboto',sans-serif;
+  font-size: 16px;
+}
+
+.txtSombra{
+  box-shadow: 2px 2px 5px #999;
+  border-radius:8px;
+}
+.box-tareas{
+  background:#EDF4F3;
+  width: 225px;
+  height: 450px;
+  padding: 20px;
+  margin:20px auto;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(214,214,214,1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(214,214,214,1);
+  box-shadow: 10px 10px 5px 0px rgba(214,214,214,1);
+}
+
+.myButton {
+	background-color:#047ED3;
+	border-radius:28px;
+	border:1px solid#047ED3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+  text-align:center;
+  height:20px ;
+
+}
+.myButton:hover {
+	background-color:#1B9FFA;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
 }

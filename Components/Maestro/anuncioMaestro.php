@@ -15,18 +15,20 @@
       while($res = mysqli_fetch_assoc($result)){
         $id_maestro = $res["id_maestro"];
     ?>
+    <div class="box-tareas">
     <p>Titulo</p>
-    <input type="text" name="tituloAnuncio" id="tituloAnuncio" class="form-control" autocomplete='off' required>
+    <input type="text" name="tituloAnuncio" id="tituloAnuncio" class="txtSombra" autocomplete='off' required>
     <p>Descripcion</p>
-    <textarea type="text" name="descripcion" id="descripcion" autocomplete='off' required></textarea>
+    <textarea type="text" name="descripcion" id="descripcion" class="txtSombra" autocomplete='off' required></textarea>
     <p>Archivo para subir (Opcional)</p>
-    <input type="file" name="files" id="files" autocomplete='off'>
-    <input type="hidden"  value="<?php echo $res["id_maestro"]; ?>" name="maestro" id="maestro">
+    <input type="file" name="files" class="txtSombra" id="files" autocomplete='off'>
+    <input type="hidden"   value="<?php echo $res["id_maestro"]; ?>" name="maestro" id="maestro">
+     
     <?php
       }
     ?>
     <p>Clase</p>
-    <select placeholder="Seccion" name="clase" id="clase" required>
+    <select placeholder="Seccion" name="clase" id="clase" class="txtSombra" required>
       <option disabled hidden selected>Clase</option>
     <?php
       
@@ -47,8 +49,8 @@
     </select>
     <p>punteo</p>
     <input type="text" name="punteo" id="punteo" autocomplete='off' required>
-    <input type="submit" value="Subir Anuncio" class="btn btn-success"/>
-
+    <input type="submit" value="Subir Anuncio" class="myButton"/>
+    </div>
     
   </form>
 </div>
