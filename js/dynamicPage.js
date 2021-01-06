@@ -47,5 +47,26 @@ $(document).ready(function() {
     });
   })
 
+  $("#mostrarCursos").on('click', function(){
+    $.ajax({
+      type: "POST",
+      url: "./Components/Alumno/mostrarClases.php",
+      success: function(response) {
+          $('#div-results').html(response);
+      }
+    });
+  })
+
+  $("#tareas").on('click', function(){
+    $.ajax({
+      type: "POST",
+      url: "./Components/Alumno/alumnoTareas.php",
+      success: function(response) {
+          $('#div-results').html(response);
+      }
+    });
+  })
+
+
 
 });
