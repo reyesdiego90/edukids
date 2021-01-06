@@ -259,3 +259,24 @@ body{
       display: block;
     }
   }
+
+  input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.box{
+  width: 500px;
+  height: 250px;
+  padding: 20px;
+  margin:20px auto;
+  background-color: #0CAD8D;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

@@ -6,7 +6,7 @@
 <div>
   <form action='Components/Maestro/subirArchivo.php' id="formAnuncio" name="formAnuncio" enctype="multipart/form-data" method="POST">
     <?php
-      $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+      $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
       mysqli_set_charset($base, 'utf8'); 
       $result = mysqli_query($base,
       "SELECT id_maestro, nombre_usuario FROM maestro
@@ -16,7 +16,7 @@
         $id_maestro = $res["id_maestro"];
     ?>
     <p>Titulo</p>
-    <input type="text" name="tituloAnuncio" id="tituloAnuncio" autocomplete='off' required>
+    <input type="text" name="tituloAnuncio" id="tituloAnuncio" class="form-control" autocomplete='off' required>
     <p>Descripcion</p>
     <textarea type="text" name="descripcion" id="descripcion" autocomplete='off' required></textarea>
     <p>Archivo para subir (Opcional)</p>

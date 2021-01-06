@@ -48,7 +48,7 @@
           <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
             <option selected>Seccion</option>
             <?php
-              $db = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+              $db = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
               $result = mysqli_query($db, "SELECT * FROM seccion");
               while($res = mysqli_fetch_assoc($result)){
             ?>
