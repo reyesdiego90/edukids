@@ -36,7 +36,7 @@
         <select placeholder="Seccion" name="grado" id="Grado" required>
             <option disabled hidden selected>Grado</option>
             <?php
-              $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+              $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
               $result = mysqli_query($base, 
               "SELECT id_grado, nombre_grado, nombre_nivel 
               FROM grado
