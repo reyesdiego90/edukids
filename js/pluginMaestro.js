@@ -5,13 +5,13 @@ $(document).ready(function () {
   //   },
   // });
 
-  $("#subirAnuncio").click(function(e){
+  $("#calificaciones").click(function(e){
     e.preventDefault();    
     const datosAlumno = $('#formAnuncio').serialize();
     console.log(datosAlumno);
     $.ajax({
       type: 'POST',
-      url: './Components/Maestro/subirArchivo.php',
+      url: './Components/Maestro/calificaciones.php',
       data: datosAlumno,
       success: function (r) {
         if (r == 1) {

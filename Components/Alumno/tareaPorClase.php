@@ -15,7 +15,6 @@
   <p>Maestro: <?php echo $res['primer_nombre'].' '.$res['segundo_nombre'].' '.$res['primer_apellido'].' '.$res['segundo_apellido'] ?></p>
   <p>Punteo: <?php echo $res['punteo'] ?></p>
   <a href="../Maestro/<?php echo $res["archivo"] ?>">Archivo</a>
-
 </div>
 <?php 
   }

@@ -3,7 +3,7 @@
   $id_usuario = $_SESSION['id_usuario'];
 ?>
 
-<div>
+<div class="formulario-tareas">
   <form action='Components/Maestro/subirArchivo.php' id="formAnuncio" name="formAnuncio" enctype="multipart/form-data" method="POST">
     <?php
       $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
@@ -15,18 +15,18 @@
       while($res = mysqli_fetch_assoc($result)){
         $id_maestro = $res["id_maestro"];
     ?>
-    <p>Titulo</p>
-    <input type="text" name="tituloAnuncio" id="tituloAnuncio" autocomplete='off' required>
-    <p>Descripcion</p>
-    <textarea type="text" name="descripcion" id="descripcion" autocomplete='off' required></textarea>
-    <p>Archivo para subir (Opcional)</p>
-    <input type="file" name="files" id="files" autocomplete='off'>
+    <label for="tituloAnuncio" class="labelAnuncio">Titulo</label><br>
+    <input class='ingreso-tareas' type="text" name="tituloAnuncio" id="tituloAnuncio" autocomplete='off' required>
+    <p class="labelAnuncio">Descripcion</p>
+    <textarea class='ingreso-tareas label-tarea' type="text" name="descripcion" id="descripcion" autocomplete='off' required></textarea>
+    <p class="labelAnuncio">Archivo para subir (Opcional)</p>
+    <input class='ingreso-tareas' type="file" name="files" id="files" autocomplete='off'>
     <input type="hidden"  value="<?php echo $res["id_maestro"]; ?>" name="maestro" id="maestro">
     <?php
       }
     ?>
-    <p>Clase</p>
-    <select placeholder="Seccion" name="clase" id="clase" required>
+    <p class="labelAnuncio">Clase</p>
+    <select class='ingreso-tareas' placeholder="Seccion" name="clase" id="clase" required>
       <option disabled hidden selected>Clase</option>
     <?php
       
@@ -45,9 +45,9 @@
       }
     ?>
     </select>
-    <p>punteo</p>
-    <input type="text" name="punteo" id="punteo" autocomplete='off' required>
-    <input type="submit" value="Subir Anuncio" class="btn btn-success"/>
+    <p class="labelAnuncio">Punteo</p>
+    <input class='ingreso-tareas' type="text" name="punteo" id="punteo" autocomplete='off' required><br>
+    <input type="submit" value="Subir Anuncio" class="btn-Anuncio"/>
 
     
   </form>

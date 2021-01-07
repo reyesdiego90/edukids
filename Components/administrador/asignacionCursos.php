@@ -12,7 +12,7 @@
     </button>
 
     <button id="btnNuevo" type="button" class="btn-hover color-1" data-toggle="modal"
-      data-target="#asignarMaestro">
+      data-target="#mostrarClases">
       Mostrar Cursos
     </button>
 
@@ -96,11 +96,74 @@
             </select>
           </div>
         </div>
+
+        <div class="telephone">
+          <label for="horario">Horario de Entrada</label>
+          <input type="time" placeholder="Horario de Entrada" name="horario1" id="horario1"  max="12:00:00" min="6:00:00" step="3600" required>
+        </div>
+        <div class="telephone">
+          <label for="horario">Horario de Salido</label>
+          <input type="time" placeholder="Horario de Salida" name="horario2" id="horario2" max="12:00:00" min="6:00:00" step="3600" required>
+        </div>
+
+        <div class="subject">
+          <label for="Dia"></label>
+          <select placeholder="Dia" name="dia1" id="dia1" required>
+            <option disabled hidden selected>Dia 1</option>
+            <?php
+              $result = mysqli_query($base, 
+              "Select * from dias");
+              while($res = mysqli_fetch_assoc($result)){
+            ?>
+            <option value="<?php echo $res["id_dia"]?>"><?php echo $res["dia"] ?>
+            </option>
+            <?php
+                    }
+                  ?>
+            </select>
+        </div>
+
+        <div class="subject">
+          <label for="Dia"></label>
+          <select placeholder="Dia" name="dia2" id="dia2" required>
+            <option disabled hidden selected>Dia 2</option>
+            <?php
+              $result = mysqli_query($base, 
+              "Select * from dias");
+              while($res = mysqli_fetch_assoc($result)){
+            ?>
+            <option value="<?php echo $res["id_dia"]?>"><?php echo $res["dia"] ?>
+            </option>
+            <?php
+                    }
+                  ?>
+            </select>
+        </div>
+
+        <div class="subject">
+          <label for="Dia"></label>
+          <select placeholder="Dia" name="dia3" id="dia3" required>
+            <option disabled hidden selected>Dia 3</option>
+            <?php
+              $result = mysqli_query($base, 
+              "Select * from dias");
+              while($res = mysqli_fetch_assoc($result)){
+            ?>
+            <option value="<?php echo $res["id_dia"]?>"><?php echo $res["dia"] ?>
+            </option>
+            <?php
+              }
+            ?>
+            </select>
+        </div>
+
         <div class="modal-footer">
           <div class="submit">
             <input type="submit" value="Guardar Curso" id="guardarCurso" class="btn btn-danger" />
           </div>
         </div>
+
+        
       </form>
     </div>
   </div>
@@ -159,12 +222,70 @@
             </select>
           </div>
         </div>
+
         <div class="modal-footer">
           <div class="submit">
             <input type="submit" value="Asignar Curso" id="courseAssignment" class="btn btn-danger" />
           </div>
         </div>
       </form>
+    </div>
+  </div>
+</div>
+
+
+<div id="mostrarClases" class="modal fade">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table id="registroTabla" class="table table-striped table-bordered" style="width:100%">
+          <thead class="thead-dark">
+            <?php
+              $result = mysqli_query($base, 
+              "SELECT nombre_curso, nombre_grado, dia1.dia, dia2.dia, dia3.dia FROM curso
+              inner join grado on GRADO_id_grado = id_grado
+              inner join dias dia1 on dia1.id_dia = DIAS_dia1 
+              inner join dias dia2 on dia2.id_dia = DIAS_diA2
+              inner join dias dia3 on dia3.id_dia = DIAS_diA3");
+            ?>
+            <tr>
+              <th>Curso</th>
+              <th>Grado</th>
+              <th>Dias</th>
+            </tr>
+          </thead>
+          <tbody> 
+            <?php
+              while($res = mysqli_fetch_array($result)){
+            ?>
+            <tr>
+              <td><?php echo $res[0] ?></td>
+              <td><?php echo $res[1] ?></td>
+              <td>
+                <?php 
+                    if($res[3] == 'Ninguno' && $res[4] == 'Ninguno'){
+                      echo $res[2];
+                    }else if($res[3] == 'Ninguno'){
+                      echo $res[2].', '.$res[4];
+                    }else if($res[4] == 'Ninguno'){
+                      echo $res[2].', '.$res[3];
+                    }else{
+                      echo $res[2].', '.$res[3].', '.$res[4];
+                    }      
+                ?>
+              </td>
+            </tr>
+            <?php
+              }
+            ?>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>

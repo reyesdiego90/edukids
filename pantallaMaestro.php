@@ -66,9 +66,9 @@
       <img src="images/Logos/LogoEdu.jpg" class="profile_image" alt="">
       <h4><?php echo $usuario ?></h4>
     </div>
-    <a href="#" id="anunciosMaestro"><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
-    <a href="#" id="mostrarDoc"><i class="far fa-file-alt"></i><span>TAREAS</span></a>
-    <a href="#"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
+    <a href="#" id="anuncioPublicados" ><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
+    <a href="#" id="anunciosMaestro"><i class="far fa-file-alt"></i><span>TAREAS</span></a>
+    <a href="#" id="calificacionesAlumno"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
     <a href="#"><i class="fas fa-cog"></i><span>AJUSTES</span></a>
   </div>
   <!--sidebar end-->

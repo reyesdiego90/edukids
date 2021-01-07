@@ -66,6 +66,26 @@ $(document).ready(function() {
       }
     });
   })
+  
+  $("#anuncioPublicados").on('click', function(){
+    $.ajax({
+      type: "POST",
+      url: "./Components/Maestro/anuncio.php",
+      success: function(response) {
+          $('#div-results').html(response);
+      }
+    });
+  })
+
+  $("#calificacionesAlumno").on('click', function(){
+    $.ajax({
+      type: "POST",
+      url: "./Components/Maestro/calificaciones.php",
+      success: function(response) {
+          $('#div-results').html(response);
+      }
+    });
+  })
 
 
 
