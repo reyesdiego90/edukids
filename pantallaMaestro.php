@@ -83,9 +83,11 @@ $(document).ready(function() {
   <div id='div-results' class="content">
     
   </div>
+
   <script src="js/bootstrap.min.js"></script>
   <script src="js/dynamicPage.js"></script>
   <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+  
   <script type="text/javascript">
     $(document).ready(function () {
       $('.nav_btn').click(function () {
@@ -93,7 +95,8 @@ $(document).ready(function() {
       });
     });
   </script>
- 
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
   
 </body>
 

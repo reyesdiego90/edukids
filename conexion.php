@@ -12,7 +12,7 @@ class Database{
         $this->host = '127.0.0.1';
         $this->db = 'edukids';
         $this->user = 'root';
-        $this->password = 'Carlosortega1';
+        $this->password = 'toor';
     }
 
     function connect(){

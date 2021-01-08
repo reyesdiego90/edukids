@@ -7,23 +7,53 @@
   <table id="registroTabla" class="table table-striped table-bordered" style="width:100%">
     <thead>
       <tr>
-        <th>Clase</th>
+        <th class='title-top top-left'>Horarios</th>
+        <th class='title-top'>Lunes</th>
+        <th class='title-top'>Martes</th>
+        <th class='title-top'>Miercoles</th>
+        <th class='title-top'>Jueves</th>
+        <th class='title-top top-right'>Viernes</th>
       </tr>
     </thead>
     <tbody>
       <?php
-        $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
+        $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
         mysqli_set_charset($base, 'utf8'); 
         $result = mysqli_query($base, 
-        "SELECT id_usuario, id_curso, nombre_curso FROM alumno
-        inner join usuario ON USUARIO_id_usuario = id_usuario
-        inner join grado ON id_grado = GRADO_id_grado
-        inner join curso ON curso.GRADO_id_grado = id_grado
-        WHERE id_usuario = $id_usuario");
+        "call new_procedure()");
         while($res = mysqli_fetch_assoc($result)){
       ?>
       <tr>
-        <td><?php echo $res["nombre_curso"] ?></td>
+        <td class="column-schedule column-hour">
+        <?php 
+          echo $res["horario_entrada"].' - '.$res["horario_salida"] 
+        ?>
+        </td>
+        <td class="column-schedule">
+          <?php
+            echo $res['lunes'];
+          ?>
+        </td>
+        <td class="column-schedule">
+          <?php
+            echo $res['martes'];
+          ?>
+        </td>
+        <td class="column-schedule">
+          <?php
+            echo $res['miercoles'];
+          ?>
+        </td>
+        <td class="column-schedule">
+          <?php
+            echo $res['jueves'];
+          ?>
+        </td>
+        <td class="column-schedule">
+          <?php
+            echo $res['viernes'];
+          ?>
+        </td>
       </tr>
       <?php
         }

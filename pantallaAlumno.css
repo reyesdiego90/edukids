@@ -257,3 +257,32 @@ body{
       display: block;
     }
   }
+
+  .title-top {
+    border: 1px solid rgb(124, 120, 120);
+    padding: 20px 0;
+    min-width: 100px;
+    background-color: #FF033E;
+    color: white;
+    font-weight: bold;
+  }
+
+  .top-left {
+    border-radius: 10px 0px 0px 0px;
+  }
+
+  .top-right {
+    border-radius: 0px 10px 0px 0px;
+  }
+
+  .column-schedule {
+    border: 1px solid rgb(153, 149, 149);
+    font-size: 15px;
+    text-align: center;
+    padding: 15px 0;
+  }
+
+  .column-hour {
+    background-color: #B31439;
+    color: white;
+  }

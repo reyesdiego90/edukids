@@ -5,10 +5,10 @@
 
 <div>
   <?php
-    $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
+    $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
     mysqli_set_charset($base, 'utf8'); 
     $result = mysqli_query($base, 
-    "	SELECT id_usuario, id_curso, nombre_curso, 
+    "SELECT id_usuario, id_curso, nombre_curso, 
     maestro.primer_nombre, maestro.segundo_nombre, 
     maestro.primer_apellido, maestro.segundo_apellido,
     grado.nombre_grado
@@ -18,7 +18,7 @@
     inner join curso ON curso.GRADO_id_grado = id_grado
     inner join asignacion_curso ON id_curso = CURSO_id_curso
     inner join maestro ON id_maestro = Maestro_id_maestro
-    WHERE id_usuario = 6");
+    WHERE id_usuario = $id_usuario");
     while($res = mysqli_fetch_assoc($result)){
     ?>
   <div class="mostrando_clase">

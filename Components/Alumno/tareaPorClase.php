@@ -1,5 +1,5 @@
 <?php
-  $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
+  $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
   mysqli_set_charset($base, 'utf8'); 
   $result = mysqli_query($base, "SELECT * FROM anuncio 
   INNER JOIN curso ON curso_id_curso = id_curso

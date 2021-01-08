@@ -1,5 +1,5 @@
 <?php
-  $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "edukids");
+  $base = mysqli_connect("127.0.0.1", "root", "toor", "edukids");
   $user = $_POST['usuarioR'];
   $primerNombre = strtolower($_POST['nombre1']);
   $segundoNombre = strtolower($_POST['nombre2']);

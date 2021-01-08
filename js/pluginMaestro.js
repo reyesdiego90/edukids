@@ -5,20 +5,17 @@ $(document).ready(function () {
   //   },
   // });
 
-  $("#calificaciones").click(function(e){
+  $("#subirAnuncioDiario").click(function(e){
     e.preventDefault();    
-    const datosAlumno = $('#formAnuncio').serialize();
+    const datosAlumno = $('#anuncioDiario').serialize();
     console.log(datosAlumno);
     $.ajax({
       type: 'POST',
-      url: './Components/Maestro/calificaciones.php',
+      url: './Components/Maestro/anuncioDiarioSQL.php',
       data: datosAlumno,
       success: function (r) {
         if (r == 1) {
-          $("#div-results").modal('hide'); //ocultamos el modal
-          $('body').removeClass('modal-open'); //eliminamos la clase del body para poder hacer scroll
-          $('.modal-backdrop').remove();
-          $('#div-results').load('Components/administrador/anuncioMaestro.php');
+          $('#div-results').load('Components/Maestro/anuncio.php');
           alertify.success('Alumno ingresado correctamente');
         } else {
           alert("error al ingresar datos"+datosAlumno);
