@@ -87,6 +87,16 @@ $(document).ready(function() {
     });
   })
 
+  $("#anuncioDiario").on('click', function(){
+    $.ajax({
+      type: "POST",
+      url: "./Components/Alumno/anuncioDiario.php",
+      success: function(response) {
+          $('#div-results').html(response);
+      }
+    });
+  })
+
 
 
 });
