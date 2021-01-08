@@ -4,7 +4,7 @@
   $result = mysqli_query($base, "SELECT * FROM anuncio 
   INNER JOIN curso ON curso_id_curso = id_curso
   INNER JOIN maestro ON maestro_id_maestro = id_maestro
-  WHERE curso_id_curso = ". (int) $_GET['id']);
+  WHERE curso_id_curso = ". (int) $_GET['id']." && estado_anuncio_id_estado=1");
   while($res = mysqli_fetch_assoc($result)){
 ?>
 
