@@ -286,3 +286,21 @@ body{
     background-color: #B31439;
     color: white;
   }
+  .labelAnuncioTitulo{
+    font-family:Roboto,sans-serif;
+    font-size:35px;
+    text-align: center;
+    color:#2E4053;
+
+  }
+  .labelAnuncio{
+    font-family:Roboto,sans-serif;
+    font-size:18px;
+    margin-left:50px;
+    color:#810217;
+
+  }
+
+  .container{
+    margin: 1em;
+  }

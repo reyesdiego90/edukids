@@ -1,5 +1,5 @@
 <?php
-  $base = mysqli_connect("127.0.0.1", "root", "toor", "edukids", "3306");
+  $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "edukids", "3306");
   $curso = strtolower($_POST['curso']);
   $grado = $_POST['grado'];
 

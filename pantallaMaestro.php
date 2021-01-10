@@ -49,7 +49,7 @@ $(document).ready(function() {
       </div>
     </div>
     <div class="right_area">
-      <a href="#" class="logout_btn"><i class="fas fa-sign-out-alt"></i></a>
+      <a href="index.php" class="logout_btn"><i class="fas fa-sign-out-alt"></i></a>
     </div>
   </header>
   <!--header area end-->
@@ -63,7 +63,7 @@ $(document).ready(function() {
       <a href="#"><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
       <a href="#"><i class="far fa-file-alt"></i><span>TAREAS</span></a>
       <a href="#"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
-      <a href="#"><i class="fas fa-cog"></i><span>AJUSTES</span></a>
+     
     </div>
   </div>
   <!--mobile navigation bar end-->
@@ -76,7 +76,7 @@ $(document).ready(function() {
     <a href="#" id="anuncioPublicados" ><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
     <a href="#" id="anunciosMaestro"><i class="far fa-file-alt"></i><span>TAREAS</span></a>
     <a href="#" id="calificacionesAlumno"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
-    <a href="#"><i class="fas fa-cog"></i><span>AJUSTES</span></a>
+    
   </div>
   <!--sidebar end-->
 

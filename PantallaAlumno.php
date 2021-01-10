@@ -40,7 +40,7 @@
       </div>
       </div>
       <div class="right_area">
-        <a href="#" class="logout_btn"><i class="fas fa-sign-out-alt"></i></a>
+        <a href="index.php" class="logout_btn"><i class="fas fa-sign-out-alt"></i></a>
       </div>
     </header>
     <!--header area end-->
@@ -55,7 +55,7 @@
       <a href="#" id=""><i class="fas fa-book"></i><span>CURSOS</span></a>
       <a href="#" id=""><i class="far fa-file-alt"></i><span>TAREAS</span></a>
       <a href="#"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
-      <a href="#"><i class="fas fa-cog"></i><span>AJUSTES</span></a>
+  
       </div>
     </div>
     <!--mobile navigation bar end-->
@@ -69,7 +69,7 @@
       <a href="#" id='mostrarCursos'><i class="fas fa-book"></i><span>CURSOS</span></a>
       <a href="#" id='tareas'><i class="far fa-file-alt"></i><span>TAREAS</span></a>
       <a href="#"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
-      <a href="#"><i class="fas fa-cog"></i><span>AJUSTES</span></a>
+    
     </div>
     <!--sidebar end-->
 

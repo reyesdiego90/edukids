@@ -5,7 +5,7 @@
 
 <div>
   <?php
-    $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+    $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
     mysqli_set_charset($base, 'utf8'); 
     $result = mysqli_query($base, 
     "SELECT id_usuario, id_curso, nombre_curso, 
@@ -21,18 +21,22 @@
     WHERE id_usuario = $id_usuario");
     while($res = mysqli_fetch_assoc($result)){
     ?>
-  <div class="mostrando_clase">
+    <div class=container>
 
+  <div class="mostrando_clase">
+  <hr></hr>
     <a href="Components/Alumno/tareaPorClase.php?id=<?php echo $res['id_curso'] ?>">
-      <h3>Clase: <?php echo $res['nombre_curso'] ?></h3>
-      <p><strong> <?php echo $res['nombre_grado'] ?> </strong></p>
-      <p>Maestro: 
+      <h3 class="labelAnuncio">Clase: <?php echo $res['nombre_curso'] ?></h3>
+      <p class="labelAnuncio"><strong> <?php echo $res['nombre_grado'] ?> </strong></p>
+      <p class="labelAnuncio">Maestro: 
         <?php echo $res["primer_nombre"].' '.$res['segundo_nombre'].' '. 
               $res['primer_apellido'].' '.$res['segundo_apellido'];
         ?>
       </p>
     </a>
+    <hr></hr>
   </div>
+    </div>
   <?php
     }
   ?>

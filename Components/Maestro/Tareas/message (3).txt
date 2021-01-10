@@ -1,0 +1,64 @@
+SELECT * FROM (
+    SELECT DISTINCT horario_entrada, horario_salida FROM horario
+) horas LEFT JOIN (
+    SELECT horario_entrada, horario_salida,
+      GROUP_CONCAT(nombre_curso) lunes
+      FROM alumno
+          inner join usuario ON USUARIO_id_usuario = id_usuario
+          INNER JOIN grado ON id_grado = GRADO_id_grado
+          inner join curso ON curso.GRADO_id_grado = id_grado
+          INNER JOIN asignacion_horario ON id_curso = curso_id_curso
+          INNER JOIN horario ON id_horario = horario_id_horario
+          INNER JOIN dias ON id_dia = dias_id_dia
+        WHERE USUARIO_id_usuario = 21 && dia = "Lunes"
+      GROUP BY 1,2    
+) lunes USING(horario_entrada, horario_salida) LEFT JOIN (
+    SELECT horario_entrada, horario_salida,
+      GROUP_CONCAT(nombre_curso) martes
+      FROM alumno
+          inner join usuario ON USUARIO_id_usuario = id_usuario
+          INNER JOIN grado ON id_grado = GRADO_id_grado
+          inner join curso ON curso.GRADO_id_grado = id_grado
+          INNER JOIN asignacion_horario ON id_curso = curso_id_curso
+          INNER JOIN horario ON id_horario = horario_id_horario
+          INNER JOIN dias ON id_dia = dias_id_dia
+        WHERE USUARIO_id_usuario = 21 && dia = "Martes"
+      GROUP BY 1,2    
+) martes USING(horario_entrada, horario_salida) LEFT JOIN (
+    SELECT horario_entrada, horario_salida,
+      GROUP_CONCAT(nombre_curso) miercoles
+      FROM alumno
+          inner join usuario ON USUARIO_id_usuario = id_usuario
+          INNER JOIN grado ON id_grado = GRADO_id_grado
+          inner join curso ON curso.GRADO_id_grado = id_grado
+          INNER JOIN asignacion_horario ON id_curso = curso_id_curso
+          INNER JOIN horario ON id_horario = horario_id_horario
+          INNER JOIN dias ON id_dia = dias_id_dia
+        WHERE USUARIO_id_usuario = 21 && dia = "Miercoles"
+      GROUP BY 1,2    
+) miercoles USING(horario_entrada, horario_salida) LEFT JOIN (
+    SELECT horario_entrada, horario_salida,
+      GROUP_CONCAT(nombre_curso) jueves
+      FROM alumno
+          inner join usuario ON USUARIO_id_usuario = id_usuario
+          INNER JOIN grado ON id_grado = GRADO_id_grado
+          inner join curso ON curso.GRADO_id_grado = id_grado
+          INNER JOIN asignacion_horario ON id_curso = curso_id_curso
+          INNER JOIN horario ON id_horario = horario_id_horario
+          INNER JOIN dias ON id_dia = dias_id_dia
+        WHERE USUARIO_id_usuario = 21 && dia = "Jueves"
+      GROUP BY 1,2    
+) jueves USING(horario_entrada, horario_salida) LEFT JOIN (
+    SELECT horario_entrada, horario_salida,
+      GROUP_CONCAT(nombre_curso) viernes
+      FROM alumno
+          inner join usuario ON USUARIO_id_usuario = id_usuario
+          INNER JOIN grado ON id_grado = GRADO_id_grado
+          inner join curso ON curso.GRADO_id_grado = id_grado
+          INNER JOIN asignacion_horario ON id_curso = curso_id_curso
+          INNER JOIN horario ON id_horario = horario_id_horario
+          INNER JOIN dias ON id_dia = dias_id_dia
+        WHERE USUARIO_id_usuario = 21 && dia = "Viernes"
+      GROUP BY 1,2    
+) viernes USING(horario_entrada, horario_salida)
+ORDER BY horas.horario_entrada, horas.horario_salida;

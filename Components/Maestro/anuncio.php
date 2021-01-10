@@ -5,7 +5,7 @@
 ?>
 <div>
   <?php
-    $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+    $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
     mysqli_set_charset($base, 'utf8'); 
     $result = mysqli_query($base,
     "SELECT id_maestro, nombre_usuario FROM maestro
@@ -21,12 +21,19 @@
     <input class='ingreso-tareas' type="text" name="tituloAnuncio" id="tituloAnuncio" autocomplete='off' required>
     <p class="labelAnuncio">Descripcion</p>
     <textarea class='ingreso-tareas label-tarea' type="text" name="descripcion" id="descripcion" autocomplete='off' required></textarea>
+  </br>
+  </br>
+    <form action="/action_page.php">
+  <label for="FechaAnuncio" class="labelAnuncio">Seleccione Fecha:</label>
+  <input type="date" id="FechaAnuncio" name="FechaAnuncio">
+</form>
+  
     <p class="labelAnuncio">Clase</p>
     <input type="hidden"  value="<?php echo $id_maestro ?>" name="maestro" id="maestro">
     <select class='ingreso-tareas' placeholder="Seccion" name="clase" id="clase" required>
       <option disabled hidden selected>Clase</option>
     <?php
-      $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+      $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
       $result = mysqli_query($base,
       "SELECT id_curso, nombre_curso, nombre_grado, nombre_nivel, Maestro_id_maestro FROM CURSO
       INNER JOIN asignacion_curso ON id_curso = CURSO_id_curso

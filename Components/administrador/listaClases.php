@@ -4,7 +4,7 @@
   <select placeholder="Dia" name="dia[]" id="dia" required>
     <option disabled hidden selected>Dia</option>
     <?php
-    $base = mysqli_connect("127.0.0.1", "root", "toor", "Edukids", "3306");
+    $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
       $result = mysqli_query($base, 
       "Select * from dias");
       while($res = mysqli_fetch_assoc($result)){
