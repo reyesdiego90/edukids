@@ -14,7 +14,7 @@
 <html lang="en">
 
 <head>
-  <title>Sidebar 05</title>
+  <title>Administrador</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -67,17 +67,9 @@
             <a href="#" id="agregarCursos"><span class="fa fa-briefcase mr-3"></span> Asignacion</a>
           </li>
           <li>
-            <a href="#"><span class="fa fa-sticky-note mr-3"></span> Blog</a>
+            <a href="login.php?cerrar_sesion=1"><span class="fas fa-times-square mr-3"></span> Cerrar Sesión</a>
           </li>
-          <li>
-            <a href="#"><span class="fa fa-suitcase mr-3"></span> Gallery</a>
-          </li>
-          <li>
-            <a href="#"><span class="fa fa-cogs mr-3"></span> Services</a>
-          </li>
-          <li>
-            <a href="#"><span class="fa fa-paper-plane mr-3"></span> Contacts</a>
-          </li>
+         
         </ul>
       </div>
     </nav>
@@ -98,7 +90,6 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/dynamicPage.js"></script>
-  <script src="js/datatable.js"></script>
   <script src="js/userRandom.js"></script>
   <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
 

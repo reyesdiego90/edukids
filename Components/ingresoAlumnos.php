@@ -1,4 +1,4 @@
-<? include_once '../conexion.php'?>
+<? include_once '../conexion2.php'?>
 
 <div class='card'>
   <div class="card-header text-white bg-primary">
@@ -48,7 +48,7 @@
           <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example">
             <option selected>Seccion</option>
             <?php
-              $db = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
+              $db = mysqli_connect("edukids.edu.gt", "edukids_reyesdiego90", "KCKBd7!G!z0n", "edukids_edukidsDatos" );
               $result = mysqli_query($db, "SELECT * FROM seccion");
               while($res = mysqli_fetch_assoc($result)){
             ?>

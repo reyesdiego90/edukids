@@ -29,21 +29,21 @@
               </ol>
               <div class="carousel-inner">
                   <div class="carousel-item active">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/portada1.png" />
+                      <img src="./img/imagen1.jpg" class="d-block w-100" alt="Inscripciones abiertas">
+                    </picture>
+                  </div>
+                  <div class="carousel-item">
                       <picture>
-                          <source media="(min-width: 768px)" srcset="https://scontent.fgua3-2.fna.fbcdn.net/v/t1.0-9/117408882_1525394464308813_7825532191937953805_o.png?_nc_cat=107&ccb=2&_nc_sid=dd9801&_nc_ohc=_OM8bs4jfM4AX8o8HA3&_nc_ht=scontent.fgua3-2.fna&oh=1d6dfc453c8b3e088bc41e7457b5ec50&oe=5FDEE69E" />
-                          <img src="https://images.pexels.com/photos/4874899/pexels-photo-4874899.jpeg?h=750&w=700&dpr=1&auto=compress" class="d-block w-100" alt="...">
+                          <source media="(min-width: 768px)" srcset="./img/portada2.jpg" />
+                          <img src="./img/imagen2.jpg" class="d-block w-100" alt="imagen de jovenes en un bus">
                       </picture>
                   </div>
                   <div class="carousel-item">
                       <picture>
-                          <source media="(min-width: 768px)" srcset="https://liberal.com.br/wp-content/uploads/2019/11/IMG_20191103_123853-e1572814326954-1355x515.jpg" />
-                          <img src="https://images.pexels.com/photos/4874895/pexels-photo-4874895.jpeg?h=750&w=700&dpr=1&auto=compress" class="d-block w-100" alt="...">
-                      </picture>
-                  </div>
-                  <div class="carousel-item">
-                      <picture>
-                          <source media="(min-width: 768px)" srcset="https://streetpins.s3-external-3.amazonaws.com/photos/stomper/stomper_1379936610-1355x515.jpg">
-                          <img src="https://images.pexels.com/photos/2705888/pexels-photo-2705888.jpeg?h=750&w=700&dpr=1&auto=compress" class="d-block w-100" alt="...">
+                          <source media="(min-width: 768px)" srcset="./img/portada3.jpg">
+                          <img src="./img/imagen2.jpg" class="d-block w-100" alt="imagen de jovenves">
                       </picture>
                   </div>
               </div>
@@ -79,14 +79,14 @@
                           <div class="col-md-6">
                               <!-- Google Maps -->
                               <div id="map-within-card-2" class="map-container rounded-left" style="height: 400px">
-                                  <iframe src="https://maps.google.com/maps?q=Seattle&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+                                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d965.0251316375644!2d-90.58593865328525!3d14.650234625176292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0xb94d5c7f6a31b8b6!2sLearning Center EduKids!5e0!3m2!1ses-419!2sgt!4v1610330364431!5m2!1ses-419!2sgt" frameborder="0"
                                           style="border:0" allowfullscreen></iframe>
                               </div>
                               <!-- Google Maps -->
                           </div>
                           <div class="col-10 col-md-4 mx-auto align-self-center py-4 mapDescription">
                               <h6 class="font-weight-bold grey-text text-uppercase small">Direccion</h6>
-                              <h5 class="font-weight-normal mb-4">2 ave. 2-25 colonia jardines de san juan </h5>
+                              <h5 class="font-weight-normal mb-4">2 ave. 2-25 Colonia Jardines de San Juan, Zona 7, Guatemala, Guatemala</h5>
                               <p class="text-muted font-weight-light">Whatsapp: 50162833</p>
                               <p class="text-muted font-weight-light">Correo: centroeducativoedu@gmail.com </p>
                               <p class="text-muted font-weight-light">Horario de Atención: <br> Lunes a viernes 8:00am a 3:00pm </p>

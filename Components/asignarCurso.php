@@ -1,5 +1,5 @@
 <?php
-  $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
+  include_once '../conexion2.php';
   $maestro = $_POST['maestro'];
   $curso = $_POST['codigo_curso'];
 

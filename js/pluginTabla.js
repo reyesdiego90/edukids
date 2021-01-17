@@ -73,6 +73,27 @@ $(document).ready(function () {
     });
   })
 
+  $('#actualizarDatosMaestro').click(function(e){
+    e.preventDefault();
+    var datos = $('#container2').serialize();
+    $.ajax({
+      type: 'POST',
+      url: 'Components/editMaestro.php',
+      data: datos,
+      success: function (r) {
+        if (r == 1) {
+          $("#div-results").modal('hide'); //ocultamos el modal
+          $('body').removeClass('modal-open'); //eliminamos la clase del body para poder hacer scroll
+          $('.modal-backdrop').remove();
+          $('#div-results').load('Components/administrador/dashBoardProfesor.php');
+          alert("alumno actualizado");
+        } else {
+          alert("error al ingresar datos "+r);
+        }
+      }
+    });
+  })
+
   $('#guardarCurso').click(function(e){
     e.preventDefault();
     var datos = $('#addCourse').serialize();
@@ -86,7 +107,7 @@ $(document).ready(function () {
           $('body').removeClass('modal-open'); //eliminamos la clase del body para poder hacer scroll
           $('.modal-backdrop').remove();
           $('#div-results').load('Components/administrador/asignacionCursos.php');
-          alert("alumno actualizado");
+          alertify.success("Curso Agregado con Exito");
         } else {
           alert("error al ingresar datos "+r);
         }
@@ -115,6 +136,27 @@ $(document).ready(function () {
     });
   })
 
+  $('#eliminarAsignacion').click(function(e){
+    e.preventDefault();
+    var datos = $('#assigment1').serialize();
+    $.ajax({
+      type: 'POST',
+      url: 'Components/eliminarAsig.php',
+      data: datos,
+      success: function (r) {
+        if (r == 1) {
+          $("#div-results").modal('hide'); //ocultamos el modal
+          $('body').removeClass('modal-open'); //eliminamos la clase del body para poder hacer scroll
+          $('.modal-backdrop').remove();
+          $('#div-results').load('Components/administrador/asignacionCursos.php');
+          alertify.success("curso eliminado correctamente");
+        } else {
+          alert("error al ingresar datos "+r);
+        }
+      }
+    });
+  })
+
   
 });
 
@@ -130,4 +172,24 @@ function editarAlumno(datos) {
   $('#telAc').val(datosAlumnos[5]);
   $('#estado').val(datosAlumnos[6]);
   $('#GradoAc').val(datosAlumnos[8]);
+}
+
+function editarMaestro(datos) {
+  datosMaestro = datos.split('||')
+  console.log(datosMaestro);
+  $('#idMaestro').val(datosMaestro[0]);
+  $('#primerNombreAc').val(datosMaestro[1]);
+  $('#segundoNombreAc').val(datosMaestro[2]);
+  $('#primerApellidoAc').val(datosMaestro[3]);
+  $('#segundoApellidoAc').val(datosMaestro[4]);
+  $('#correoAc').val(datosMaestro[5]);
+  $('#usuarioAc').val(datosMaestro[8]);
+  $('#telAc').val(datosMaestro[6]);
+  $('#estado').val(datosMaestro[7]);
+}
+
+function eliminarAsignacion(datos) {
+  datosAsignacion = datos.split('||')
+  console.log(datosAsignacion);
+  $('#idAsignacion').val(datosAsignacion[0]);
 }

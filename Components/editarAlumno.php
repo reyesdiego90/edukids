@@ -1,5 +1,5 @@
 <?php
-  $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
+  include_once '../conexion2.php';
 
   $id_alumno = strtolower($_POST['idEstudiante']);
   $primer_nombre =  strtolower($_POST['nombre1Ac']);

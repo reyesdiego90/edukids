@@ -1,3 +1,16 @@
+<?php
+  session_start();
+
+  if(!isset($_SESSION['rol'])){
+    header('location: login.php');
+  }else{
+    if($_SESSION['rol'] != 3){
+      header('location: login.php');
+    }
+  }
+  $usuario = $_SESSION['user'];
+  $id_usuario = $_SESSION['id_usuario'];
+?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -27,7 +40,7 @@
       </div>
       </div>
       <div class="right_area">
-        <a href="#" class="logout_btn"><i class="fas fa-sign-out-alt"></i></a>
+        <a href="login.php?cerrar_sesion=1" class="logout_btn"><i class="fas fa-sign-out-alt"></i></a>
       </div>
     </header>
     <!--header area end-->
@@ -38,11 +51,11 @@
         <i class="fa fa-bars nav_btn"></i>
       </div>
       <div class="mobile_nav_items">
-      <a href="#"><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
-      <a href="#"><i class="fas fa-book"></i><span>CURSOS</span></a>
-      <a href="#"><i class="far fa-file-alt"></i><span>TAREAS</span></a>
+      <a href="#" id='anuncioDiario1'><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
+      <a href="#" id='mostrarCursos1'><i class="fas fa-book"></i><span>CURSOS</span></a>
+      <a href="#" id='tareas1'><i class="far fa-file-alt"></i><span>TAREAS</span></a>
       <a href="#"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
-      <a href="#"><i class="fas fa-cog"></i><span>AJUSTES</span></a>
+  
       </div>
     </div>
     <!--mobile navigation bar end-->
@@ -50,28 +63,24 @@
     <div class="sidebar">
       <div class="profile_info">
         <img src="images/Logos/LogoEdu.jpg" class="profile_image" alt="">
-        <h4>Jessica</h4>
+        <h4><?php echo $usuario ?></h4>
       </div>
-      <a href="#"><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
-      <a href="#"><i class="fas fa-book"></i><span>CURSOS</span></a>
-      <a href="#"><i class="far fa-file-alt"></i><span>TAREAS</span></a>
+      <a href="#" id='anuncioDiario'><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
+      <a href="#" id='mostrarCursos'><i class="fas fa-book"></i><span>CURSOS</span></a>
+      <a href="#" id='tareas'><i class="far fa-file-alt"></i><span>TAREAS</span></a>
       <a href="#"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
-      <a href="#"><i class="fas fa-cog"></i><span>AJUSTES</span></a>
+    
     </div>
     <!--sidebar end-->
 
-    <div class="content">
-      <div class="card">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-      <div class="card">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-      <div class="card">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
+    <div id='div-results' class="content">
+      <?php
+        echo '<script> $("#div-results").load("Components/Alumno/anuncioDiario.php"); </script>';
+      ?>
     </div>
 
+
+    <script src="js/dynamicPage.js"></script>
     <script type="text/javascript">
     $(document).ready(function(){
       $('.nav_btn').click(function(){
@@ -79,6 +88,6 @@
       });
     });
     </script>
-
+    
   </body>
 </html>

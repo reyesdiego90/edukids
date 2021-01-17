@@ -1,4 +1,5 @@
 <?php
+  ob_start();
   include_once 'conexion.php';
   session_start();
 
@@ -6,7 +7,7 @@ $responde = array();
 
 if(isset($_GET['cerrar_sesion'])){
   session_unset();
-
+  header('location: login.php');
   session_destroy();
 }
 
@@ -15,6 +16,9 @@ if(isset($_SESSION['rol'])){
       case 1:
         header('location: admin.php');
       break;
+      case 2:
+        header('location: pantallaMaestro.php');
+        break;
       case 3:
         header('location: PantallaAlumno.php'); 
       break;
@@ -27,7 +31,7 @@ if(isset($_SESSION['rol'])){
     $password = $_POST['password'];
 
     $db = new Database();
-    $query = $db->connect()->prepare('SELECT usuario.nombre_usuario, usuario.pass_usuario, rol.id_rol, rol.nombre_rol 
+    $query = $db->connect()->prepare('SELECT id_usuario, usuario.nombre_usuario, usuario.pass_usuario, rol.id_rol, rol.nombre_rol 
     FROM asig_rol
     INNER JOIN usuario 
     ON asig_rol.USUARIO_id_usuario = usuario.id_usuario 
@@ -37,8 +41,10 @@ if(isset($_SESSION['rol'])){
   
     $row = $query->fetch(PDO::FETCH_NUM);
     if($row == true){
-      $rol = $row[2];
-      $user = $row[0];
+      $idUsuario = $row[0];
+      $rol = $row[3];
+      $user = $row[1];
+      $_SESSION['id_usuario'] = $idUsuario;
       $_SESSION['rol'] = $rol;
       $_SESSION['user'] = $user;
       
@@ -46,6 +52,9 @@ if(isset($_SESSION['rol'])){
         case 1:
           header('location: admin.php');  
         break;
+        case 2:
+          header('location: pantallaMaestro.php');
+          break;
         case 3:
           header('location: PantallaAlumno.php'); 
         break;
@@ -56,6 +65,7 @@ if(isset($_SESSION['rol'])){
       echo "El usuario o contrasena son incorrectos";
     }  
   }
+  ob_end_flush();
 ?> 
 
 <!DOCTYPE html>

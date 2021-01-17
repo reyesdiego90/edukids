@@ -1,81 +1,104 @@
+<?php
+  session_start();
+
+  if(!isset($_SESSION['rol'])){
+    header('location: login.php');
+  }else{
+    if($_SESSION['rol'] != 2){
+      header('location: login.php');
+    }
+  }
+  $usuario = $_SESSION['user'];
+  $id_usuario = $_SESSION['id_usuario'];
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alumno</title>
-    <link rel="stylesheet" href="pantallaMaestro.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
-  </head>
-  <body>
 
-    <input type="checkbox" id="check">
-    <!--header area start-->
-    <header>
-      <div class="aline">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alumno</title>
+  <link rel="stylesheet" href="./css/pantallaMaestro.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+
+  <script src="./ckeditor/ckeditor.js"></script>
+  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+
+</script>
+</head>
+
+<body>
+
+  <input type="checkbox" id="check">
+  <!--header area start-->
+  <header>
+    <div class="aline">
       <label for="check">
         <i class="fas fa-bars" id="sidebar_btn"></i>
       </label>
       <div class="left_area">
-      <h3 style="color:#12194F;">EDU
-                        <span style="color: #FF033E">K</span>
-                        <span style="color: #E66112">I</span>
-                        <span style="color: #228B22">D</span>
-                        <span style="color: #12194F">S</span>
-      </div>
-      </div>
-      <div class="right_area">
-        <a href="#" class="logout_btn"><i class="fas fa-sign-out-alt"></i></a>
-      </div>
-    </header>
-    <!--header area end-->
-    <!--mobile navigation bar start-->
-    <div class="mobile_nav">
-      <div class="nav_bar">
-        <img src="images/Logos/LogoEdu.jpg" class="mobile_profile_image" alt="">
-        <i class="fa fa-bars nav_btn"></i>
-      </div>
-      <div class="mobile_nav_items">
-      <a href="#"><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
-      <a href="#"><i class="far fa-file-alt"></i><span>TAREAS</span></a>
-      <a href="#"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
-      <a href="#"><i class="fas fa-cog"></i><span>AJUSTES</span></a>
+        <h3 style="color:#12194F;">EDU
+          <span style="color: #FF033E">K</span>
+          <span style="color: #E66112">I</span>
+          <span style="color: #228B22">D</span>
+          <span style="color: #12194F">S</span>
       </div>
     </div>
-    <!--mobile navigation bar end-->
-    <!--sidebar start-->
-    <div class="sidebar">
-      <div class="profile_info">
-        <img src="images/Logos/LogoEdu.jpg" class="profile_image" alt="">
-        <h4>Jessica</h4>
-      </div>
-      <a href="#"><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
-      <a href="#"><i class="far fa-file-alt"></i><span>TAREAS</span></a>
-      <a href="#"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
-      <a href="#"><i class="fas fa-cog"></i><span>AJUSTES</span></a>
+    <div class="right_area">
+      <a href="login.php?cerrar_sesion=1" class="logout_btn"><i class="fas fa-sign-out-alt"></i></a>
     </div>
-    <!--sidebar end-->
+  </header>
+  <!--header area end-->
+  <!--mobile navigation bar start-->
+  <div class="mobile_nav">
+    <div class="nav_bar">
+      <img src="images/Logos/LogoEdu.jpg" class="mobile_profile_image" alt="">
+      <i class="fa fa-bars nav_btn"></i>
+    </div>
+    <div class="mobile_nav_items">
+      <a href="#" id="anuncioPublicados1"><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
+      <a href="#" id="anunciosMaestro2"><i class="far fa-file-alt"></i><span>TAREAS</span></a>
+      <a href="#" id="calificacionesAlumno3"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
+     
+    </div>
+  </div>
+  <!--mobile navigation bar end-->
+  <!--sidebar start-->
+  <div class="sidebar">
+    <div class="profile_info">
+      <img src="images/Logos/LogoEdu.jpg" class="profile_image" alt="">
+      <h4><?php echo $usuario ?></h4>
+    </div>
+    <a href="#" id="anuncioPublicados" ><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
+    <a href="#" id="anunciosMaestro"><i class="far fa-file-alt"></i><span>TAREAS</span></a>
+    <a href="#" id="calificacionesAlumno"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
+    
+  </div>
+  <!--sidebar end-->
 
-    <div class="content">
-      <div class="card">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-      <div class="card">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-      <div class="card">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-      </div>
-    </div>
+  <div id='div-results' class="content">
+    
+  </div>
 
-    <script type="text/javascript">
-    $(document).ready(function(){
-      $('.nav_btn').click(function(){
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/dynamicPage.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+  
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.nav_btn').click(function () {
         $('.mobile_nav_items').toggleClass('active');
       });
     });
-    </script>
+  </script>
+ <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  
+</body>
 
-  </body>
 </html>

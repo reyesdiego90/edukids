@@ -27,8 +27,7 @@
     </thead>
     <tbody>
       <?php
-        $base = mysqli_connect("127.0.0.1", "root", "Carlosortega1", "Edukids", "3306");
-        mysqli_set_charset($base, 'utf8'); 
+        include_once '../../conexion2.php';
         $result = mysqli_query($base, 
         "SELECT alumno.id_alumno, alumno.primer_nombre, alumno.segundo_nombre, alumno.primer_apellido, alumno.segundo_apellido, alumno.telefono, estado.id_estado ,estado.estado, seccion.seccion, grado.id_grado ,grado.nombre_grado, nivel.nombre_nivel, usuario.nombre_usuario FROM alumno
         INNER JOIN grado ON grado.id_grado = alumno.GRADO_id_grado
@@ -91,7 +90,7 @@
         <div class="modal-body">
           <div class="name">
             <label for="Primer Nombre"></label>
-            <input type="text" placeholder="Primer Nombre" name="nombre1Alumno" id="primerNombre" autocomplete='off' required>
+            <input type="text" placeholder="Primer Nombre" name="nombre1" id="primerNombre" autocomplete='off' required>
           </div>
           <div class="email">
             <label for="Segundo Nombre"></label>
@@ -116,12 +115,12 @@
             <select placeholder="Seccion" name="grado" id="Grado" required>
               <option disabled hidden selected>Grado</option>
               <?php
-                      $result = mysqli_query($base, 
-                      "SELECT id_grado, nombre_grado, nombre_nivel 
-                      FROM grado
-                      INNER JOIN nivel ON grado.NIVEL_id_nivel = nivel.id_nivel");
-                      while($res = mysqli_fetch_assoc($result)){
-                    ?>
+                $result = mysqli_query($base, 
+                "SELECT id_grado, nombre_grado, nombre_nivel 
+                FROM grado
+                INNER JOIN nivel ON grado.NIVEL_id_nivel = nivel.id_nivel");
+                while($res = mysqli_fetch_assoc($result)){
+              ?>
               <option value="<?php echo $res["id_grado"]?>"><?php echo $res["nombre_grado"].' '.$res['nombre_nivel'] ?>
               </option>
               <?php
