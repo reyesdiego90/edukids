@@ -15,6 +15,7 @@
       $id_maestro = $res["id_maestro"];
     }
   ?>
+  <div class="containerContenido">
   <div class="formulario-tareas">
   <form id="anuncioDiario" name="anuncioDiario"  method="POST">
     <label for="tituloAnuncio" class="labelAnuncio">Titulo</label><br>
@@ -46,10 +47,11 @@
       }
     ?>
     </select>
-    <br><input type="submit" id="subirAnuncioDiario" value="Subir Anuncio" class="btn-Anuncio"/>
+    <br><input type="submit" id="subirAnuncioDiario" value="Subir Anuncio" class="btn-maestro color-1"/>
   </form>
 
 </div>
+    </div>
 
 <script src="js/pluginMaestro.js"></script>
 <script>

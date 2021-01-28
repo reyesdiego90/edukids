@@ -2,17 +2,17 @@
   session_start();
   $id_usuario = $_SESSION['id_usuario'];
 ?>
-
+<div class="containerCurso">
 <div>
   <table id="registroTabla" class="table table-striped table-bordered" style="width:100%">
     <thead>
       <tr>
-        <th class='title-top top-left'>Horarios</th>
-        <th class='title-top'>Lunes</th>
-        <th class='title-top'>Martes</th>
-        <th class='title-top'>Miercoles</th>
-        <th class='title-top'>Jueves</th>
-        <th class='title-top top-right'>Viernes</th>
+        <th class='title-top top-left'></th>
+        <th class='title-topC2'>Lunes</th>
+        <th class='title-topC3'>Martes</th>
+        <th class='title-topC4'>Miercoles</th>
+        <th class='title-topC5'>Jueves</th>
+        <th class='title-topC6 top-right'>Viernes</th>
       </tr>
     </thead>
     <tbody>
@@ -123,5 +123,9 @@
     </tbody>
   </table>
 </div>
-
-
+      </div>
+      <div class="clases">
+      <a href="pantallaClases.php" class="button orange">Sociales</a>
+      <p class="containerp">Profesor X</p>
+      </div>
+   

@@ -21,10 +21,11 @@
     WHERE id_usuario = $id_usuario");
     while($res = mysqli_fetch_assoc($result)){
     ?>
+    <div class=boxTareas>
     <div class=container>
 
   <div class="mostrando_clase">
-  <hr></hr>
+  
     <a href="Components/Alumno/tareaPorClase.php?id=<?php echo $res['id_curso'] ?>">
       <h3 class="labelAnuncio">Clase: <?php echo $res['nombre_curso'] ?></h3>
       <p class="labelAnuncio"><strong> <?php echo $res['nombre_grado'] ?> </strong></p>
@@ -34,7 +35,7 @@
         ?>
       </p>
     </a>
-    <hr></hr>
+ </div>
   </div>
     </div>
   <?php

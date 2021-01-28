@@ -17,18 +17,24 @@
   WHERE id_usuario = $id_usuario && fecha = CURDATE()");
   while($res = mysqli_fetch_assoc($result)){
 ?>
+<div class ="image">
+<img src=img/cole.jpg class="imgAnuncio">
+</div>
+</br>
+<div class=box>
 <div class=container>
-<hr></hr>
+
   <p class="labelAnuncioTitulo">Titulo: <?php echo $res['titulo']?></p>
-  <p class="labelAnuncio">Fecha: <?php echo $res['fecha']?></p>
-  <p class="labelAnuncio">Curso: <?php echo $res['nombre_curso']?></p>
-  <p class="labelAnuncio">Maestro: 
+  <p class="labelD">Fecha: <?php echo $res['fecha']?></p>
+  <p class="labelD">Curso: <?php echo $res['nombre_curso']?></p>
+  <p class="labelD">Maestro: 
     <?php 
     echo $res['primer_nombre'].' '.$res['segundo_nombre'].' '.$res['primer_apellido'].' '.$res['segundo_apellido'];
     ?>
   </p>
-  <p class="labelAnuncio">Descripcion: <?php echo $res['descripcion']?></p>
-<hr></hr>
+  <p class="labelD">Descripcion: <?php echo $res['descripcion']?></p>
+
+  </div>
   </div>
 <?php
   }

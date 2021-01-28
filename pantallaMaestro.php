@@ -18,11 +18,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alumno</title>
+  <title>Maestro</title>
   <link rel="stylesheet" href="./css/pantallaMaestro.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+
 
   <script src="./ckeditor/ckeditor.js"></script>
   
@@ -50,7 +51,7 @@
       </div>
     </div>
     <div class="right_area">
-      <a href="login.php?cerrar_sesion=1" class="logout_btn"><i class="fas fa-sign-out-alt"></i></a>
+      <a href="login.php?cerrar_sesion=1" class="logout_btn"><i class="fas fa-sign-out-alt" style="text-align:center;"></br>Cerrar Sesion</i></a>
     </div>
   </header>
   <!--header area end-->

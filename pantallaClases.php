@@ -1,17 +1,3 @@
-<?php
-  session_start();
-
-  if(!isset($_SESSION['rol'])){
-    header('location: login.php');
-  }else{
-    if($_SESSION['rol'] != 3){
-      header('location: login.php');
-    }
-  }
-  $usuario = $_SESSION['user'];
-  $id_usuario = $_SESSION['id_usuario'];
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -40,7 +26,7 @@
       </div>
       </div>
       <div class="right_area">
-        <a href="login.php?cerrar_sesion=1" class="logout_btn"><i class="fas fa-sign-out-alt" style="text-align:center;"></br>Cerrar Sesion</i></a>
+        <a href="login.php?cerrar_sesion=1" class="logout_btn"><i class="fas fa-sign-out-alt"></i></a>
       </div>
     </header>
     <!--header area end-->
@@ -74,9 +60,7 @@
     <!--sidebar end-->
 
     <div id='div-results' class="content">
-      <?php
-        echo '<script> $("#div-results").load("Components/Alumno/anuncioDiario.php"); </script>';
-      ?>
+      
     </div>
 
 

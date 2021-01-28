@@ -14,7 +14,8 @@
     <button id="btnNuevo" type="button" class="btn-hover color-1" data-toggle="modal"
       data-target="#mostrarClases">
       Mostrar Cursos
-    </button>
+    </button> 
+   
 
   </div>
   <hr>

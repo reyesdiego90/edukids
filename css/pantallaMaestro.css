@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+   background-image:  url(../img/FONDO.png);
   }
   .aline{
     margin-left:80px;
@@ -31,7 +32,7 @@ body{
   
   .logout_btn{
     padding: 5px;
-    background: #2E4053;
+    background:transparent;
     text-decoration: none;
     float: right;
     margin-top: -30px;
@@ -39,13 +40,14 @@ body{
     border-radius: 2px;
     font-size: 15px;
     font-weight: 600;
-    color: #fff;
+    color: #2E4053;
     transition: 0.5s;
     transition-property: background;
   }
   
   .logout_btn:hover{
     background: #0B87A6;
+    color: white;
   }
   
   .sidebar{
@@ -300,5 +302,54 @@ body{
     font-size: 20px;
     font-weight: bold;
   }
+
+  .btn-maestro {
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: bold;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 50px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-maestro:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-maestro:focus {
+    outline: none;
+}
+
+.btn-maestro.color-1 {
+    background-image: linear-gradient(to right, #239B56, #117A65, #023253, #239B56);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+}
+
+.containerContenido{
+  background-color: white;
+  content: -1em;
+  -webkit-box-shadow: -3px 2px 15px -2px #000000; 
+  box-shadow: -3px 2px 15px -2px #000000;
+  height: auto;
+  width: 1000px;
+  margin-left: 50px;
+ 
+  
+}
 
   

@@ -1,3 +1,11 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumno</title>
+    <link rel="stylesheet" href="../../pantallaAlumno.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+  </head>
 <?php
   include_once '../../conexion2.php';
   mysqli_set_charset($base, 'utf8'); 
@@ -23,16 +31,20 @@
   WHERE curso_id_curso = ". (int) $_GET['id']." && estado_anuncio_id_estado=1");
   while($res = mysqli_fetch_assoc($result)){
 ?>
+<div class=box>
+  <div class=container>
 
-<div>
-  <h3><?php echo $res['titulo'] ?></h3>
-  <p><?php echo $res['descripcion']  ?></p>
-  <p>Clase: <?php echo $res['nombre_curso'] ?></p>
-  <p>Fecha de Entrega: <?php echo $res['fechaEntrega'].' - '.$res['horaEntrega']?></p>
-  <p>Maestro: <?php echo $res['primer_nombre'].' '.$res['segundo_nombre'].' '.$res['primer_apellido'].' '.$res['segundo_apellido'] ?></p>
-  <p>Punteo: <?php echo $res['punteo'] ?></p>
-  <a href="../Maestro/<?php echo $res["archivo"] ?>">Archivo</a>
+
+  <h3 class="labelAnuncioTitulo"><?php echo $res['titulo'] ?></h3>
+  <p class="labelD"><?php echo $res['descripcion']  ?></p>
+  <p class="labelD">Clase: <?php echo $res['nombre_curso'] ?></p>
+  <p class="labelD">Fecha de Entrega: <?php echo $res['fechaEntrega'].' - '.$res['horaEntrega']?></p>
+  <p class="labelD">Maestro: <?php echo $res['primer_nombre'].' '.$res['segundo_nombre'].' '.$res['primer_apellido'].' '.$res['segundo_apellido'] ?></p>
+  <p class="labelD">Punteo: <?php echo $res['punteo'] ?></p>
+  <a class="archivo" href="../Maestro/<?php echo $res["archivo"] ?>">Archivo</a>
+  
 </div>
+  </div>
 <?php 
   }
 ?>

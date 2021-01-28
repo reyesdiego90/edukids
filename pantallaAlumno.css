@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
+    background-image:url(img/FONDO.png);
   }
   .aline{
     margin-left:80px;
@@ -31,7 +32,7 @@ body{
   
   .logout_btn{
     padding: 5px;
-    background: #19B3D3;
+    background:transparent;
     text-decoration: none;
     float: right;
     margin-top: -30px;
@@ -39,19 +40,20 @@ body{
     border-radius: 2px;
     font-size: 15px;
     font-weight: 600;
-    color: #fff;
+    color: #19B3D3;
     transition: 0.5s;
     transition-property: background;
   }
   
   .logout_btn:hover{
     background: #0B87A6;
+    color:white;
   }
   
   .sidebar{
     z-index: 1;
     top: 0;
-    background: #FF033E;
+    background: #E7AE00;
     margin-top: 70px;
     padding-top: 30px;
     position: fixed;
@@ -78,13 +80,13 @@ body{
   }
   
   .sidebar .profile_info h4{
-    color: #ccc;
+    color: #0020B3;
     margin-top: 0;
     margin-bottom: 20px;
   }
   
   .sidebar a{
-    color: #fff;
+    color: #0020B3;
     display: block;
     width: 100%;
     line-height: 60px;
@@ -139,7 +141,6 @@ body{
     margin-top: 60px;
     padding: 20px;
     margin-left: 250px;
-    background: url(fondo-contenido.jpg) no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -198,7 +199,7 @@ body{
     }
   
     .nav_bar{
-      background:#FF033E;
+      background:#FFC102;
       width: (100% - 0px);
       margin-top: 70px;
       display: flex;
@@ -229,12 +230,12 @@ body{
     }
   
     .mobile_nav_items{
-      background: #d10535;
+      background: #E7AE00;
       display: none;
     }
   
     .mobile_nav_items a{
-      color: #fff;
+      color: #0020B3;
       display: block;
       text-align: center;
       letter-spacing: 1px;
@@ -246,7 +247,8 @@ body{
     }
   
     .mobile_nav_items a:hover{
-      background: #21d1f5;
+      background: #0FB8FF ;
+      color:white;
     }
   
     .mobile_nav_items i{
@@ -259,10 +261,50 @@ body{
   }
 
   .title-top {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px 0;
+    min-width: 100px;
+    background:transparent;
+    color: white;
+    font-weight: bold;
+  }
+  .title-topC2 {
     border: 1px solid rgb(124, 120, 120);
     padding: 20px 0;
     min-width: 100px;
-    background-color: #FF033E;
+    background-color: #EC7063; 
+    color: white;
+    font-weight: bold;
+  }
+  .title-topC3 {
+    border: 1px solid rgb(124, 120, 120);
+    padding: 20px 0;
+    min-width: 100px;
+    background-color: #5DADE2;
+    color: white;
+    font-weight: bold;
+  }
+  .title-topC4 {
+    border: 1px solid rgb(124, 120, 120);
+    padding: 20px 0;
+    min-width: 100px;
+    background-color: #F4D03F;
+    color: white;
+    font-weight: bold;
+  }
+  .title-topC5 {
+    border: 1px solid rgb(124, 120, 120);
+    padding: 20px 0;
+    min-width: 100px;
+    background-color: #117A65;
+    color: white;
+    font-weight: bold;
+  }
+  .title-topC6 {
+    border: 1px solid rgb(124, 120, 120);
+    padding: 20px 0;
+    min-width: 100px;
+    background-color: #E74C3C;
     color: white;
     font-weight: bold;
   }
@@ -283,24 +325,152 @@ body{
   }
 
   .column-hour {
-    background-color: #B31439;
+    background-color: #EC7063;
     color: white;
+  }
+ 
+
+  .box{
+    padding: 5px;
+    height: auto;
+    background-color: #E7AE00;
+    -webkit-box-shadow: -7px 9px 8px 0px rgba(0,0,0,0.54); 
+    box-shadow: -7px 9px 8px 0px rgba(0,0,0,0.54);
+    
+  }
+  .boxTareas{
+    height: auto;
+    background-color: #E7AE00;
+    -webkit-box-shadow: 2px 14px 10px -1px rgba(0,0,0,0.57);
+    -moz-box-shadow: 2px 14px 10px -1px rgba(0,0,0,0.57);
+    box-shadow: 2px 14px 10px -1px rgba(0,0,0,0.57);
+    
   }
   .labelAnuncioTitulo{
     font-family:Roboto,sans-serif;
     font-size:35px;
     text-align: center;
-    color:#2E4053;
+    color:white;
 
   }
   .labelAnuncio{
     font-family:Roboto,sans-serif;
     font-size:18px;
     margin-left:50px;
-    color:#810217;
+    color: white;
 
   }
 
+  .labelD{
+    font-family:Roboto,sans-serif;
+    font-size:18px;
+    margin-left:15px;
+    color:white;
+
+  }
   .container{
     margin: 1em;
   }
+  .containerCurso{
+    background-color: white;
+  }
+
+  .archivo{
+    margin-left:15px;
+  }
+
+  .imgAnuncio{
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+
+.ContainerProfesor{
+  background-color:red;
+  width: 500px;
+  margin: auto;
+  height: auto;
+}
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+.button{
+  position: relative;
+	display:block;
+	background: transparent;
+	width:200px;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+	font-size:15px;
+	text-decoration:none;
+	text-transform:uppercase;
+  margin:40px auto;
+  margin-left: 50px;
+}
+.button:before, .button:after {
+	width:200px;
+  left: 0px;
+	height:27px;
+  z-index: -1;
+}
+
+.orange{ color: #E7AE00; }
+
+.orange:before,.orange:after {
+	border: 3px solid #E7AE00;
+}
+
+
+.button:before{
+  position: absolute;
+  content: '';
+  border-bottom: none;
+  -webkit-transform: perspective(15px) rotateX(5deg);
+  -moz-transform: perspective(15px) rotateX(5deg);
+  transform: perspective(15px) rotateX(5deg);  
+}
+.button:after{
+  position: absolute;
+  top: 32px;
+  content: '';
+  border-top: none;
+  -webkit-transform: perspective(15px) rotateX(-5deg);
+  -moz-transform: perspective(15px) rotateX(-5deg);
+  transform: perspective(15px) rotateX(-5deg);
+}
+
+/* Color del boton curso */
+
+.orange:hover:before, .orange:hover:after {
+	background: #E7AE00;
+}
+
+.button:hover{
+	color:#fff;
+}
+
+.div .containerP{
+  position:left;
+}
+
+.containerp{
+  display: inline-block; 
+  width: 50%; 
+  height: 50px;
+  background-color: #AED6F1;
+  color:blue; 
+  border: white;
+  text-align: center;
+}
+
+.clases .containerp{
+  display: block;
+   
+
+}

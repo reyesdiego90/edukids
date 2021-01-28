@@ -2,7 +2,7 @@
   session_start();
   $id_usuario = $_SESSION['id_usuario'];
 ?>
-
+<div class="containerContenido">
 <div class="formulario-tareas">
   <form action='./Components/Maestro/subirArchivo.php' id="formAnuncio" name="formAnuncio" enctype="multipart/form-data" method="POST">
     <?php
@@ -50,11 +50,12 @@
     <input class='ingreso-tareas' type="time" id="horaEntrega" name="horaEntrega" require/ >
     <p class="labelAnuncio">Punteo</p>
     <input class='ingreso-tareas' type="text" name="punteo" id="punteo" autocomplete='off' required><br>
-    <input type="submit" value="Subir Anuncio" class="btn-Anuncio"/>
+    <input type="submit" value="Subir Tarea" class="btn-maestro color-1"/>
 
     
   </form>
 </div>
+    </div>
 
 <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
 <script src="js/pluginMaestro.js"></script>
