@@ -1,0 +1,141 @@
+<HTML>
+<HEAD>
+<TITLE>Bienvenido a su Sitio Web</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+td {font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #333333;}
+p {font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #333333;}
+
+.blanco {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #E4ECEF;}
+.gris {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cccccc;}
+.Titulo {
+        font-family: Arial, Verdana, Helvetica, sans-serif;
+        font-size: 22px;
+        color: #000000;
+        font-weight: bolder;
+}
+.Subtitulo {
+        font-family: Arial, Verdana, sans-serif;
+        font-size: 20px;
+        color: #ABC0CB;
+        font-weight: bolder;
+}
+.Subtitulo2 {
+        font-family: Arial, Verdana, sans-serif;
+        font-size: 16px;
+        color:#333300;
+        font-weight: bold;
+}
+a {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; color: #3E587B; text-decoration:none;}
+a:hover {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; color: #488601; text-decoration:none;}
+a:visited {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; color: #3E587B; text-decoration:none;}
+
+.verde {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #488601;
+}
+body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+}
+-->
+</style>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+
+<CENTER>
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+  <tr>
+    <td height="2" colspan="2" align="center" valign="top" bgcolor="#1B2023" class="Titulo"><span class="blanco"><img src="i/spacer.gif" width="2" height="2" /></span></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" valign="middle" background="i/fondo.gif" bgcolor="#F8C301" class="Titulo">Bienvenidos a: <!--#echo var="HTTP_HOST" --></td>
+    </tr>
+  <tr>
+    <td height="1" colspan="2" align="center" valign="top" bgcolor="#778993" class="blanco"><img src="i/spacer.gif" width="2" height="1" /></td>
+  </tr>
+  <tr>
+    <td align="center" valign="middle" class="Subtitulo">en construcci&oacute;n</td>
+    <td align="center" valign="middle" class="Subtitulo">en construcci&oacute;n</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" valign="top">Si es el propietario de este sitio, lea las instrucciones para utilizar su sitio web y <a href="instrucciones.shtml#masinfo" target="_self">c&oacute;mo quitar esta p&aacute;gina</a></td>
+    </tr>
+  <tr>
+    <td align="right" valign="top"><table width="400" border="0" cellpadding="1" cellspacing="0">
+      <tr>
+        <td height="2" align="center" valign="top" class="blanco"><img src="i/spacer.gif" width="2" height="2" /></td>
+      </tr>
+      <tr>
+        <td align="center" valign="top" class="blanco"><p><img src="i/hosting_e.jpg" width="300" height="299" /></p>          </td>
+      </tr>
+      <tr>
+        <td align="center" valign="top" class="blanco"><table width="100%" border="0" cellpadding="5" cellspacing="7" bgcolor="#ADCB8F">
+          <tr>
+            <td align="center" bgcolor="#FFFFCC" class="verde"><p>Gracias por habernos elegido para alojar su sitio web.</p>
+              <p>Reconocemos que su sitio tiene un prop&oacute;sito y nuestro mayor esfuerzo es para que usted logre el objetivo para el que contrat&oacute; su sitio web.</p></td>
+          </tr>
+        </table></td>
+      </tr>
+      
+    </table></td>
+    <td align="left" valign="top"><table width="370" border="0" cellpadding="15" cellspacing="3">
+        <tr>
+          <td align="left" valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="1" bgcolor="#E4ECEF">
+                <tr>
+                  <td align="center" bgcolor="#495760" class="blanco"><span class="Subtitulo">INSTRUCCIONES</b></span><br>
+                  Para usar su sitio web de la mejor manera, tome en cuenta las recomendaciones e instrucciones visitando los siguientes v&iacute;nculos.</td>
+                </tr>
+              <tr>
+                  <td align="left" bgcolor="#F1F4F8"><a href="instrucciones.shtml#cpanel" target="_self">- C&oacute;mo ingresar a su panel de control -cpanel-</a></td>
+                </tr>
+              <tr>
+                  <td align="left" bgcolor="#F1F4F8"><a href="instrucciones.shtml#email" target="_self">- C&oacute;mo usar su correo electr&oacute;nico</a></td>
+                </tr>
+              <tr>
+                  <td align="left" bgcolor="#F1F4F8"><a href="instrucciones.shtml#ftp" target="_self">- C&oacute;mo subir su sitio con ftp o con cpanel</a></td>
+                </tr>
+              <tr>
+                <td align="left" bgcolor="#F1F4F8"><a href="instrucciones.shtml#masinfo" target="_self">- &iquest;Necesita m&aacute;s informaci&oacute;n?</a></td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor="#FF9900"><a href="instrucciones.shtml#bloqueos" target="_self">Lea: &iquest;Por qu&eacute; podr&iacute;a ser bloqueado su sitio</a></td>
+              </tr>
+              <tr>
+                <td height="3" align="left" bgcolor="#495760" class="Subtitulo">Enlaces de Inter&eacute;s</td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor="#F1F4F8"><ul>
+                    <li><a href="http://www.directorio.gt" target="_blank">Directorio de Negocios de Guatemala</a></li>
+                  <li><a href="http://www.guatesitios.net" target="_blank">Registro de dominios: .com .net .org, Etc.</a></li>
+                  <li><a href="http://www.dominios.com.gt" target="_blank">Dominios de Guatemala .com .net .org, Etc.</a></li>
+                  <li><a href="http://www.dominios.gt" target="_blank">Registro de domnios .gt, .sa.gt, .cpa.gt, .fut.gt, .gua.gt, .fm.gt, .am.gt, .cc.gt, .top.gt, .com.gt, .net.gt, .edu.gt, .mil.gt, .gob.gt y mas</a></li>
+                </ul></td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor="#495760"><span class="gris">No olvide que su sitio web s&oacute;lo es una herramienta para alcanzar sus objetivos, una herramienta no hace nada por s&iacute; misma, es necesario utilizarla apropiadamente.</span></td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor="#000000" class="verde">::: Todos queremos una Guatemala mejor :::</td>
+              </tr>
+              
+              
+              
+          </table></td>
+        </tr>
+        
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">&nbsp;</td>
+    <td align="center" valign="top">&nbsp;</td>
+  </tr>
+</table>
+</CENTER>
+
+</BODY>
+</HTML>

@@ -1,0 +1,65 @@
+ "SELECT * FROM (
+            SELECT DISTINCT horario_entrada, horario_salida FROM horario
+            INNER JOIN asignacion_horario ON horario_id_horario=id_horario
+            ) horas LEFT JOIN (
+            SELECT horario_entrada, horario_salida,
+              GROUP_CONCAT(nombre_curso) lunes
+              FROM alumno
+                  left join usuario ON USUARIO_id_usuario = id_usuario
+                  left join grado ON id_grado = GRADO_id_grado
+                  left join curso ON curso.GRADO_id_grado = id_grado
+                  left join asignacion_horario ON id_curso = curso_id_curso
+                  left join horario ON id_horario = horario_id_horario
+                  left join dias ON id_dia = dias_id_dia
+                WHERE USUARIO_id_usuario = $id_usuario && id_dia = 1
+              GROUP BY horario_entrada,horario_salida    
+        ) lunes USING(horario_entrada, horario_salida) LEFT JOIN (
+            SELECT horario_entrada, horario_salida,
+              GROUP_CONCAT(nombre_curso) martes
+              FROM alumno
+                  left join usuario ON USUARIO_id_usuario = id_usuario
+                  left join grado ON id_grado = GRADO_id_grado
+                  left join curso ON curso.GRADO_id_grado = id_grado
+                  left join asignacion_horario ON id_curso = curso_id_curso
+                  left join horario ON id_horario = horario_id_horario
+                  left join dias ON id_dia = dias_id_dia
+                WHERE USUARIO_id_usuario = $id_usuario && dia = 'Martes'
+              GROUP BY 1,2    
+        ) martes USING(horario_entrada, horario_salida) LEFT JOIN (
+            SELECT horario_entrada, horario_salida,
+              GROUP_CONCAT(nombre_curso) miercoles
+              FROM alumno
+                  inner join usuario ON USUARIO_id_usuario = id_usuario
+                  INNER JOIN grado ON id_grado = GRADO_id_grado
+                  inner join curso ON curso.GRADO_id_grado = id_grado
+                  INNER JOIN asignacion_horario ON id_curso = curso_id_curso
+                  INNER JOIN horario ON id_horario = horario_id_horario
+                  INNER JOIN dias ON id_dia = dias_id_dia
+                WHERE USUARIO_id_usuario = $id_usuario && dia = 'Miercoles'
+              GROUP BY 1,2    
+        ) miercoles USING(horario_entrada, horario_salida) LEFT JOIN (
+            SELECT horario_entrada, horario_salida,
+              GROUP_CONCAT(nombre_curso) jueves
+              FROM alumno
+                  inner join usuario ON USUARIO_id_usuario = id_usuario
+                  INNER JOIN grado ON id_grado = GRADO_id_grado
+                  inner join curso ON curso.GRADO_id_grado = id_grado
+                  INNER JOIN asignacion_horario ON id_curso = curso_id_curso
+                  INNER JOIN horario ON id_horario = horario_id_horario
+                  INNER JOIN dias ON id_dia = dias_id_dia
+                WHERE USUARIO_id_usuario = $id_usuario && dia = 'Jueves'
+              GROUP BY 1,2    
+        ) jueves USING(horario_entrada, horario_salida) LEFT JOIN (
+            SELECT horario_entrada, horario_salida,
+              GROUP_CONCAT(nombre_curso) viernes
+              FROM alumno
+                  inner join usuario ON USUARIO_id_usuario = id_usuario
+                  INNER JOIN grado ON id_grado = GRADO_id_grado
+                  inner join curso ON curso.GRADO_id_grado = id_grado
+                  INNER JOIN asignacion_horario ON id_curso = curso_id_curso
+                  INNER JOIN horario ON id_horario = horario_id_horario
+                  INNER JOIN dias ON id_dia = dias_id_dia
+                WHERE USUARIO_id_usuario = $id_usuario && dia = 'Viernes'
+              GROUP BY 1,2    
+        ) viernes USING(horario_entrada, horario_salida)
+        ORDER BY horas.horario_entrada, horas.horario_salida");

@@ -1,0 +1,340 @@
+<HTML>
+<HEAD>
+<TITLE>Instrucciones para usar su Sitio Web</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+td {font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #333333;}
+p {font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 12px; color: #333333;}
+
+.blanco {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #E4ECEF;}
+.gris {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #cccccc;}
+.Titulo {
+        font-family: Arial, Verdana, Helvetica, sans-serif;
+        font-size: 22px;
+        color: #000000;
+        font-weight: bolder;
+}
+.Subtitulo {
+        font-family: Arial, Verdana, sans-serif;
+        font-size: 20px;
+        color: #ABC0CB;
+        font-weight: bolder;
+}
+.Subtitulo2 {
+        font-family: Arial, Verdana, sans-serif;
+        font-size: 16px;
+        color:#333300;
+        font-weight: bold;
+}
+a {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; color: #3E587B; text-decoration:none;}
+a:hover {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; color: #488601; text-decoration:none;}
+a:visited {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; color: #3E587B; text-decoration:none;}
+
+
+.verde {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #488601;
+}
+body {
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+}
+-->
+</style>
+</HEAD>
+<BODY BGCOLOR=#FFFFFF>
+
+<CENTER>
+<table width="100%" border="0" cellpadding="1" cellspacing="0">
+  <tr>
+    <td height="2" colspan="2" align="center" valign="top" bgcolor="#1B2023" class="blanco"><img src="i/spacer.gif" width="2" height="2" /></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" valign="top" background="i/fondo.gif" bgcolor="#F8C301" class="Titulo"><a name="arriba"></a>Instrucciones para: <!--#echo var="HTTP_HOST" --></td>
+    </tr>
+  <tr>
+    <td height="1" colspan="2" align="center" valign="top" bgcolor="#778993" class="blanco"><img src="i/spacer.gif" width="2" height="1" /></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">&nbsp;</td>
+    <td align="center" valign="top" class="Subtitulo">en construcci&oacute;n</td>
+  </tr>
+  <tr>
+    <td colspan="2" align="right" valign="top">&nbsp;</td>
+    </tr>
+  <tr>
+    <td align="right" valign="top"><table width="250" border="0" cellpadding="1" cellspacing="0">
+      <tr>
+        <td height="2" align="center" valign="top" class="blanco"><img src="i/spacer.gif" width="2" height="2" /></td>
+      </tr>
+      <tr>
+        <td align="center" valign="top" class="blanco"><p><img src="i/hosting_ep.jpg" width="150" height="149" /></p>          </td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="7" bgcolor="#ADCB8F">
+          <tr>
+            <td align="center" bgcolor="#FFFFFF" class="verde">Gracias por alojar su sitio web con nosotros. Si tiene alg&uacute;n problema usando su sitio puede comunicarse y proporcione todos los detalles acerca del problema que est&aacute; experimentando.</td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td align="center" valign="top" class="verde">GUATEMALA, C. A.</td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><table width="100%" border="0" cellpadding="2" cellspacing="4" bgcolor="#F1F4F8">
+          <tr>
+            <td align="center" class="verde">&nbsp;</td>
+            <td align="left" class="Subtitulo2">CONTENIDO</td>
+          </tr>
+          <tr>
+            <td align="center" bgcolor="#ADCB8F" class="verde"><span class="blanco"><img src="i/spacer.gif" alt="guia.com.gt" width="3" height="3" /></span></td>
+            <td align="left" bgcolor="#FFFFFF"><a href="#cpanel" target="_self">Ingreso al panel de control</a></td>
+          </tr>
+          <tr>
+            <td align="center" bgcolor="#ADCB8F" class="verde"><span class="blanco"><img src="i/spacer.gif" alt="" width="2" height="3" /></span></td>
+            <td align="left" bgcolor="#FFFFFF"><a href="#ftp" target="_self">C&oacute;mo subir su sitio</a></td>
+          </tr>
+          <tr>
+            <td align="center" bgcolor="#ADCB8F" class="verde"><span class="blanco"><img src="i/spacer.gif" alt="guia.com.gt" width="2" height="3" /></span></td>
+            <td align="left" bgcolor="#FFFFFF"><a href="#email" target="_self">Su correo electr&oacute;nico</a></td>
+          </tr>
+          <tr>
+            <td align="center" bgcolor="#ADCB8F" class="verde"><span class="blanco"><img src="i/spacer.gif" alt="guia.com.gt" width="2" height="3" /></span></td>
+            <td align="left" bgcolor="#FFFFFF"><a href="#masinfo" target="_self">M&aacute;s informaci&oacute;n?</a></td>
+          </tr>
+          <tr>
+            <td align="center" class="verde"><span class="blanco"><img src="i/spacer.gif" alt="guia.com.gt" width="2" height="3" /></span></td>
+            <td align="left" class="Subtitulo2">Lea esto:</td>
+          </tr>
+          <tr>
+            <td align="center" bgcolor="#FF3300" class="verde"><span class="blanco"><img src="i/spacer.gif" alt="guia.com.gt" width="2" height="3" /></span></td>
+            <td align="left" bgcolor="#FFCC33"><a href="#bloqueos" target="_self">Posibles bloqueos a su sitio</a></td>
+          </tr>
+        </table></td>
+      </tr>
+      
+    </table></td>
+    <td align="left" valign="top"><table width="570" border="0" cellpadding="5" cellspacing="3">
+        <tr>
+          <td align="left" valign="top"><table width="100%" border="0" cellpadding="9" cellspacing="1" bgcolor="#E4ECEF">
+                <tr>
+                  <td align="center" bgcolor="#495760" class="blanco"><span class="Subtitulo">INSTRUCCIONES</b></span><br>
+                  Para usar su sitio web de la mejor manera, tome en cuenta las recomendaciones e instrucciones, recuerde que este documento debe verlo en su sitio web para que algunos de los valores sean los que debe usar.</td>
+                </tr>
+              <tr>
+                  <td align="left" bgcolor="#88C426" class="Titulo"><a name="cpanel"></a>PANEL DE CONTROL</td>
+                </tr>
+              <tr>
+                  <td align="left" bgcolor="#F1F4F8"> <p>El panel de control de su sitio web ( cPanel ) le permite crear sus cuentas de correo, ver estadísticas de uso del sitio, activar contadores de visitas para colocar en su sitio web y muchas opciones más que podrá explorar con toda confianza.  Le recomendamos cambiar la clave que se le proporcionó y usar una clave que no sea muy f&aacute;cil de adivinar, se recomienda que tenga letras mayúsculas, letras minúsculas y números.</p>
+                    <p>Si en esta p&aacute;gina de instrucciones, en la direcci&oacute;n no aparece el nombre de su sitio, use la informaci&oacute;n de ejemplo sustituyendo elnombredesusitio.com por el real.</p>
+                    <p class="Subtitulo2">Conectarse normalmente:</p>
+                                        <ul>
+                      <li><strong>Direcci&oacute;n:</strong> <a href="http://<!--#echo var='HTTP_HOST' -->/cpanel" target="_blank"><!--#echo var="HTTP_HOST" -->/cpanel</a> ó <a href="http://<!--#echo var='HTTP_HOST' -->:2082" target="_blank"><!--#echo var="HTTP_HOST" -->:2082</a> <br>
+                        <span class="verde">Ejemplo: www.elnombredesusitio.com/cpanel</span></li>
+                      <li><strong>Usuario:</strong> elproporcionado</li>
+                      <li><strong>Clave:</strong> laproporcionada</li>
+                    </ul>
+                    <p class="Subtitulo2">Conectarse con mayor seguridad:(encripci&oacute;n SSL)</p>
+                                        <ul>
+                      <li><strong>Direcci&oacute;n:</strong> <a href="https://<!--#echo var='HTTP_HOST' -->:2083" target="_blank">https://<!--#echo var="HTTP_HOST" -->:2083</a> <br>
+                        <span class="verde">https://www.elnombredesusitio.com:2083</span></li>
+                      <li><strong>Usuario:</strong> elproporcionado</li>
+                      <li><strong>Clave:</strong> laproporcionada</li>
+                    </ul>
+                    <p class="Subtitulo2">Observaciones:</p>
+                    <p>Para ingresar al panel de control de su sitio web debe contar con se&ntilde;al de internet que no tenga bloqueados los puertos &quot;2082&quot; y &quot;2083&quot;, el puerto 2083 es para conectarse con encripci&oacute;n y se recomienda para cuando usted se est&eacute; contectando a su panel de control desde un caf&eacute; internet o en cualquier lugar p&uacute;blico donde no le consta que alguien pueda estar interviniendo sus comunicaciones. </p>
+                    <p>Si se conecta a su panel de control con encripci&oacute;n (puerto 2083) recibir&aacute; la advertencia de que el certificado no es v&aacute;lido, debe ignorar esa advertencia porque no tendr&iacute;a sentido que contrate un certificado pues son necesarios cuando uno tiene venta en l&iacute;nea y all&iacute; quiere que la gente sienta confianza de que no se trata de una empresa fantasma que lde desea cobrar algo. Por eso, puede aprovechar la encripci&oacute;n para conectarse a su panel de control e ignorar la advertencia sobre el certificado de seguridad: <a href="https://<!--#echo var='HTTP_HOST' -->:2083" target="_blank">https://<!--#echo var="HTTP_HOST" -->:2083</a></p>
+                    <p>Cada cierto tiempo, al ingresar al panel de control de su sitio se le pedir&aacute; que actualice la direcci&oacute;n de correo electr&oacute;nico de contacto.</p>                    </td>
+                </tr>
+              <tr>
+                  <td align="left" bgcolor="#88C426" class="Titulo"><a name="ftp"></a>FORMAS DE SUBIR SU SITIO</td>
+                </tr>
+              <tr>
+                <td align="left" bgcolor="#F1F4F8"><p>Hay varias formas de subir su sitio web. La mayor&iacute;a de los programas para dise&ntilde;ar sitios web tienen una forma de &quot;publicarlo&quot; o subirlo al servidor. En todos los casos se le pedir&aacute;n los datos para conectarse y los datos que debe usar se describen a continuaci&oacute;n:</p>
+                  <ul>
+                    <li><strong>Servidor ftp: </strong> <!--#echo var="HTTP_HOST" -->
+                    </li>
+                    <li><strong>Folder ftp: </strong> public_html <br>
+                      <span class="verde">(los archivos de su sitio deben subirse dentro de esta carpeta)</span></li>
+                    <li><strong>Usuario: </strong> elproporcionado</li>
+                    <li><strong>Clave: </strong> laproporcionada</li>
+                  </ul>
+                  <p class="Subtitulo2">Programa FTP gratuito para subir su sitio web:</p>
+                  <p>Si su programa de dise&ntilde;o de sitio no le da la opci&oacute;n de publicar su sitio usando FTP, puede descargar un programa cliente de ftp gratuito de la siguiente p&aacute;gina: <a href="http://filezilla-project.org/download.php?type=client" target="_blank">http://filezilla-project.org/download.php?type=client</a></p>
+                  <p>Con un programa cliente de ftp podr&aacute; crear una sesi&oacute;n al servidor remoto usando los datos para iniciar sesi&oacute;n y eso le abrir&aacute; una ventana con los datos que actualmente est&aacute;n en su sitio web, all&iacute; podr&aacute; ver este mismo archivo que est&aacute; leyendo que se llama &quot;instrucciones.shtml&quot; que usted decide si elimina o deja all&iacute;,  luego podr&aacute; arrastrar sus archivos desde una ventana del explorador de archivos de windows hacia la ventana del programa ftp.</p>
+                  <p class="Subtitulo2">Recuerde:</p>
+                  <ol>
+                    <li>La p&aacute;gina principal de su sitio debe llamarse de una de estas formas: index.html - index.htm - index.shtml - index.php</li>
+                    <li>El nombre de la p&aacute;gina principal debe ser todo en min&uacute;sculas.</li>
+                    <li>Los nombres de los otros archivos de su sitio no tienen restricciones pero considere que debe colocar las referencias a las im&aacute;genes y v&iacute;nculos a p&aacute;ginas con el nombre exactamente como es el nombre del archivos, lo que es en min&uacute;sculas y may&uacute;sculas tal como se ve el nombre del archivo. Se recomienda lo siguiente:
+                      <ul>
+                        <li>Que los nombres de los archivos sean en min&uacute;sculas</li>
+                        <li>Que los nombres de los archivos no tengan tildes, espacios o letra &quot;&ntilde;&quot;</li>
+                        <li>Que las extensiones de los archivos sean en min&uacute;sculas</li>
+                        </ul>
+                    </li>
+                    <li>Las recomendaciones anteriores obedecen a que, en algunos casos, por el navegador que usan algunas personas que visiten su sitio no podr&aacute;n ver im&aacute;genes o le fallar&aacute;n los v&iacute;nculos a p&aacute;ginas con nombres que contengan espacios, &ntilde; o tildes.</li>
+                    </ol>                  
+                  <p class="Subtitulo2">Subir su sitio web usando el panel de control:</p>
+                  <p>En algunos casos, cuando su se&ntilde;al de internet no le permite conectarse con FTP o por alguna raz&oacute;n no tiene un programa que le permita subir su sitio con FTP, puede usar el panel de control para subir su sitio web.</p>
+                  <p>El panel de control le permite subir archivo por archivo, pero si desea subir todo lo que contiene una carpeta le resultar&aacute; muy tedioso estar subiendo archivo por archivo, entonces, puede empacar su carpeta en .zip y luego subir el archivo comprimido .zip, ya que el panel de control les permite desempacar archivos, le resultar&aacute; muy pr&aacute;ctico hacerlo de esa forma.</p>
+                  <p><strong>Subir archivo por archivo:</strong></p>
+                  <ol>
+                    <li>Ingresea al panel de control de su sitio web (<a href="#cpanel" target="_self">vea como ingresar a cpanel</a>)</li>
+                    <li>Use la opci&oacute;n &quot;Administrador de ficheros&quot;</li>
+                    <li>Ingrese a la carpeta donde desea subir los archivos (lea en el administrador de ficheros la forma de navegar en las carpetas)</li>
+                    <li>En la parte superior le aparecer&aacute; la opci&oacute;n &quot;Cargar ficheros&quot;</li>
+                    <li>Al ingresar a cargar ficheros tendra la opci&oacute;n de &quot;examinar&quot; en su pc para elgir el archivo que desee subir.</li>
+                    <li>Si el archivo ya existe y est&aacute; subiendo una nueva versi&oacute;n, no olvide marcar la casilla para &quot;sobreescribir&quot; los archivos existentes.</li>
+                    </ol>
+                  <p><strong>Subir un archivo zip y desempacarlo en el sitio:</strong></p>
+                  <ol>
+                    <li>Para subir su sitio completo, a la carpeta en su PC donde tenga todos los archivos de su sitio web, c&aacute;mbiele el nombre a &quot;public_html&quot; y luego, en el explorador de windows con el bot&oacute;n derecho sobre esa carpeta public_html empaquelo en .zip usando la opci&oacute;n &quot;Enviar a&quot; y elija &quot;Carpeta comprimida (en zip)&quot; y eso generar&aacute; el archivo: public_html.zip</li>
+                    <li>Siga los pasos del 1 al 2 del procedimiento para subir archivo por archivo, pero asegurese de estar en la carpeta principal de su hosting, fuera de de la carpeta public_html, para eso use la opci&oacute;n que aparece arriba en el administrador de ficheros &quot;subir un nivel&quot;</li>
+                    <li>Luego use la opci&oacute;n &quot;Cargar ficheros&quot; y luego, con el bot&oacute;n examinar elija en su PC el archivo public_html.zip que cre&oacute; en el primer paso.</li>
+                    <li>Luego que haya cargado el archivo, despu&eacute;s de esperar un rato de acuerdo al tama&ntilde;o de su archivo public_html.zip, elija el archivo que acaba de subir haciendo click en &eacute;l y a la derecha, en el administrador de archivos, le aparecer&aacute;n varias opciones, una de las opciones es &quot;Extraer contenido del archivo&quot; y de esa forma extraer&aacute; lo que contiene el archivo public_html.zip y por el nombre que tiene en su pc, al extraerlo colocar&aacute; todo dentro de la carpeta public_html en su sitio web.</li>
+                    <li>Para que esto funcione, debe eliminar los archivos que est&aacute;n arriba porque al desempacar no reemplaza los archivos ya existentes.</li>
+                    <li>Si empaca su carpeta de una forma diferente a la indicada en este procedimiento, podr&iacute;a ser que el formato no sea compatible con la herramienta para desempacar que usa el Administrador de ficheros del panel de control de su sitio web.</li>
+                    </ol>
+                  <p>&nbsp;</p></td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor="#88C426" class="Titulo"><a name="email" id="email"></a>COMO USAR SU EMAIL - con sugerencias -</td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor="#F1F4F8"><p>El correo electr&oacute;nico es un servicio especial que podr&aacute; utilizar con el servicio de hosting que le proporcionamos. Hay dos formas de correo electr&oacute;nico:</p>
+                  <ol>
+                    <li>El normal que se administra con su panel de control -cpanel-</li>
+                    <li>El correo electr&oacute;nico con aplicaciones de google que funciona con su dominio y con el sistema de correo de gmail.</li>
+                    </ol>                  
+                  <p class="Subtitulo2">Crear y usar sus cuentas de correo de cpanel:</p>
+                  <ol>
+                    <li>Debe ingresar al panel de control y al ingresar a la opci&oacute;n &quot;Cuentas de correo&quot; podr&aacute; crear sus cuentas de correo.</li>
+                    <li>Despu&eacute;s de creada su cuenta de correo podr&aacute; utilizarla en l&iacute;nea ingresando al webmail:                      </li>
+                    <ul>
+                      <li>Ingresando a: <a href="http://<!--#echo var='HTTP_HOST' -->/webmail" target="_blank">http://<!--#echo var="HTTP_HOST" -->/webmail</a>, de esta forma se conectará por el puerto 2095, o sea que también puede escribir: <a href="http://<!--#echo var='HTTP_HOST' -->:2095" target="_blank">http://<!--#echo var="HTTP_HOST" -->:2095</a>. </li>
+                      <li>Pero si desea conectarse con encripción SSL tal como se puede hacer con <a href="#cpanel" target="_self">cpanel (ver detalles)</a>, podrá conectarse al webmail por el puerto 2096, en la direcci&oacute;n: <a href="https://<!--#echo var='HTTP_HOST' -->:2096" target="_blank">https://<!--#echo var="HTTP_HOST" -->:2096</a> (note que hay una letra &quot;s&quot; despu&eacute;s de http: https)</li>
+                    </ul>
+                    <li>Para iniciar sesi&oacute;n en webmail se le pedir&aacute; usuario y clave, el usuario es la direcci&oacute;n de correo electr&oacute;nico completa, incluyendo el dominio <span class="verde">usuario@elnombredesusitio.com</span> y la clave que le haya asignado a ese usuario al crear la cuenta en <a href="#cpanel" target="_self">el panel de control de su sitio</a>.</li>
+                    <li>Luego de iniciar sesi&oacute;n podr&aacute; elegir entre tres programas webmail, nosotros le sugerimos SquirrelMail pero usted puede explorar los tres para ver cu&aacute;l es el que prefiere. Recomendamos SquirrelMail porque es muy pr&aacute;ctico y r&aacute;pido, adem&aacute;s, lo puede configurar para verlo en espa&ntilde;ol y la presentaci&oacute;n de manera muy sencilla en el v&iacute;nculo Options que le aparecer&aacute; en la parte superior.</li>
+                    <li>No le recomendamos que el uso normal de su correo electr&oacute;nico sea con webmail. Es preferible que lo configure en un cliente de correo como Outlook para que no tenga l&iacute;mite de espacio y pueda crear backups f&aacute;cilmente para guardarlos en DVDs o CDs.</li>
+                    <li>Para configurar su cuenta de correo en outlook o programas similares necesitar&aacute; la siguiente informaci&oacute;n: </li>
+                    <ul>
+                      <li>El servidor de correo entrante y saliente es el dominio de su sitio, as&iacute;: <!--#echo var="HTTP_HOST" --></li>
+                      <li>El usuario es todo su correo electr&oacute;nico: <span class="verde">usuario@elnombredesusitio.com</span> recuerde sustituir elnombredesusitio</li>
+                      <li>La clave asignada.</li>
+                      <li>Debe ir a m&aacute;s configuraciones y marcar que su servidor de correo saliente requiere autenticaci&oacute;n y marca que use la misma informaci&oacute;n que el correo entrante para que no tenga que ingresar de nuevo el usuario y clave.</li>
+                    </ul>
+                    <li>En todos los programas clientes de correo como Outlook se le pedir&aacute; la misma informaci&oacute;n que se describe en el punto anterior, pero ser&aacute; de ver en cada caso la forma en la que debe ingresarlo, regularmente, en los programas como outlook, hay una opci&oacute;n que dice &quot;Cuentas de correo&quot; y all&iacute; uno agrega una cuenta de correo y el programa le pedir&aacute; la informaci&oacute;n de la cuenta de correo y es de seguir las instrucciones para finalizar la configuraci&oacute;n.</li>
+                    <li>Los errores m&aacute;s comunes son cuando pueden recibir pero no pueden enviar, y es porque no le han configurado que el servidor de correo saliente requiere autenticaci&oacute;n. El otro error frecuente es porque en el espacio para el usuario s&oacute;lo ingresan lo que va antes del s&iacute;mbolo de arroba ( @) ) y se debe ingresar toda la direcci&oacute;n en el espacio para el usuario que est&aacute; donde se pide la clave.</li>
+                    <li>Por favor tome en cuenta que, como se describe en las causas por las que podr&iacute;a ser bloqueado el acceso a su sitio web, debe verificar que el programa de correo que utilice revise si hay correos nuevos a cada 10 minutos o m&aacute;s. Porque si configura que el programa revise a cada minuto podr&iacute;a provocar bloqueos temporales de acceso a su sitio web.</li>
+                    <li>La cantidad de sesiones que cada cuenta de correo puede realizar con el servidor es de 60 por hora. Por esto es que, si alguien tiene que el programa revise a cada minuto, con unas pocas veces que use el bot&oacute;n de &quot;enviar y recibir&quot; superar&aacute; las 60 sesiones como l&iacute;mite y el acceso quedar&aacute; bloqueado mientras se concluye la hora.</li>
+                  </ol>                  
+                  <p class="Subtitulo2">Cuentas de correo con aplicaciones de google - gmail -</p>
+                  <p>Las cuentas de correo con su dominio y aplicaciones de google son una soluci&oacute;n muy interesante y efectiva. Las aplicaciones de google.com se usan en la versi&oacute;n gratuita y usted tiene la opci&oacute;n de configurarlo todo usted mismo o, por un costo muy accesible, pedir que se le configure este servicio y se le proporcione toda la asistencia que necesite para utilizarlo. </p>
+                  <p>Para usar sus cuentas de correo con aplicaciones de google.com, cuando ha solicitado esta configuraci&oacute;n, es necesario que considere lo siguiente:</p>
+                  <ol>
+                    <li>Las cuentas de correo que ve en el cpanel dejar&aacute;n de funcionar.</li>
+                    <li>Para consultar sus cuentas de correo, debe ingresar a http://mail.elnombredesusitio.com (recuerde sustituir elnombredesusitio.com)</li>
+                    <li>En este caso, debe ingresar primero con el usuario y clave que se le haya proporcionado.</li>
+                    <li>Al ingresar a su cuenta de correo (la del administrador), tendr&aacute; el mismo sistema que gmail y en la parte superior derecha ver&aacute; el v&iacute;nculo &quot;Administrar este dominio&quot;, debe ingresar all&iacute; para crear otras cuentas de correo, listas o grupos y alias hacia sus cuentas de correo. Si usted contrat&oacute; este servicio cuenta con la asistencia necesaria y s&oacute;lo debe llamar a su proveedor de hosting.</li>
+                    <li>Al crear cada cuenta de correo debe anotar la clave o contrase&ntilde;a que el sistema asignar&aacute; o puede asignar una contrase&ntilde;a para proporcionarla a cada usuario.</li>
+                    <li>Cada una de las cuentas creadas no est&aacute;n activas hasta que cada usuario inicia sesi&oacute;n la primera vez. Debe ingresar el c&oacute;digo de verificaci&oacute;n y presionar el bot&oacute;n &quot;Acepto crear mi cuenta&quot;.</li>
+                    <li>Aunque estas cuentas de correo cuentan son una capacidad muy considerable, puede ser que necesite configurarlas en su outlook. Si este es el caso, debe iniciar sesi&oacute;n con la cuenta de correo que desea configurar en su outlook y en la parte superior derecha le aparece el v&iacute;nculo &quot;Configuraci&oacute;n&quot;, al ingresar a Configuraci&oacute;n le mostrar&aacute; varias pesta&ntilde;as y debe ingresar a la que menciona &quot;Correo pop y reenv&iacute;o&quot;, debe activar el acceso de pop3 a su cuenta de correo y all&iacute; le mostrar&aacute; las instrucciones para configurar su cuenta de correo en outlook o en el programa que est&eacute; utilizando. Por favor lea todas las instrucciones que se le de para configurar su programa porque debe cambiar n&uacute;meros de puertos y varios detalles que podr&iacute;an hacer que su cuenta no funcione si no sigue todos los pasos.</li>
+                  </ol></td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor="#88C426" class="Titulo"><a name="masinfo" id="email2"></a>SI NECESITA MAS INFORMACION</td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor="#F1F4F8"><p class="Subtitulo2">C&oacute;mo quitar la p&aacute;gina de instrucciones de su sitio web:</p>
+                  <p>Usted vio la p&aacute;gina de instrucciones en su sitio porque todav&iacute;a no ha subido una p&aacute;gina de inicio. <a href="#ftp" target="_self">En cuanto suba su sitio (lea c&oacute;mo subir su sitio)</a> ya no se ver&aacute; la p&aacute;gina de instrucciones aunque todav&iacute;a estar&aacute; all&iacute;. Si desea borrar las p&aacute;ginas de instrucciones borre, en los archivos que est&aacute;n en el servidor las p&aacute;ginas &quot;index.shtml&quot; y la p&aacute;gina &quot;instrucciones.shtml&quot;. Le recomendamos que copie la informaci&oacute;n que contiene esta p&aacute;gina y la guarde para futuras referencias. Para guardar esta p&aacute;gina, en su explorador de internet use la opci&oacute;n &quot;Guardar como&quot; y la guarda como p&aacute;gina web en un lugar de su disco duro donde la encuentre f&aacute;cilmente. Tambi&eacute;n puede copiar el contenido de esta p&aacute;gina y pegarlo en un documento de Word para tenerlo como referencia.</p>
+                  <p class="Subtitulo2">Si necesita m&aacute;s informaci&oacute;n:</p>
+                  <p>Por favor tome en cuenta que este documento s&oacute;lo contiene instrucciones b&aacute;sicas. No se pretende que sea un manual de uso. Puede contactar al proveedor de su sitio web para que le proporcione informaci&oacute;n m&aacute;s detallada que necesite.</p>
+                  <ol>
+                    <li>Puede ver el manual del panel de control en: <a href="http://www.cpanel.net/support/docs/11/cpanel/" target="_blank">http://www.cpanel.net/support/docs/11/cpanel/</a></li>
+                    <li>Mientras usa su panel de control cpanel, cuando ingresa a cada opci&oacute;n podr&aacute; ver una descripci&oacute;n de lo que hace y le recomendamos explorar su panel de control para conocerlo y cuando se presente una necesidad en su sitio usted sabr&aacute; si cuenta con una herramienta para lo que desea hacer.</li>
+                    <li></li>
+                  </ol></td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor="#FFCC33" class="Titulo"><a name="bloqueos" id="bloqueos"></a>POSIBLES BLOQUEOS A SU SITIO</td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor="#F1F4F8"><p>Con la intenci&oacute;n de mejorar el rendimiento de su sitio, se cuenta con un sistema que, si detecta varios intentos de ingresar a una secci&oacute;n privada de su sitio con una clave inv&aacute;lida genera un bloqueo temporal a la direcci&oacute;n ip del visitante que est&aacute; ingresando el usuario y clave inv&aacute;lidos.</p>
+                  <p>Recuerde que, si se trata de un bloqueo a su direcci&oacute;n ip, su sitio sigue en l&iacute;nea, pero usted no lo podr&aacute; ver hasta que caduque el bloqueo temporal o el bloqueo sea retirado por su proveedor de hosting. En otras palabras: las personas que no pueden ver el sitio son las que est&aacute;n usando la misma se&ntilde;al de internet que usted (regularmente todos en la misma oficina que comparten la se&ntilde;al de internet) y es porque alguien de la oficina hizo algo que provoc&oacute; el bloqueo. Vea abajo las posibles causas.</p>
+                  <p class="Subtitulo2">C&oacute;mo pedir el desbloqueo de su sitio web.</p>
+                  <p>Apunte la siguiente informaci&oacute;n porque no la podr&aacute; ver si su sitio est&aacute; bloqueado: Si no puede ver su sitio web ni puede usar su correo electr&oacute;nico, es muy probable que su direcci&oacute;n ip haya sido bloqueada por alguna causa. Para ver la direcci&oacute;n ip con la que est&aacute; navegando ingrese al sitio web: <a href="http://www.ip2location.com" target="_blank">www.ip2location.com</a> y al nom&aacute;s ingresar le mostrar&aacute; en la parte del centro su direcci&oacute;n ip: IP Address: 216.230.158.150 (este n&uacute;mero s&oacute;lo es un ejemplo del que usted ver&aacute;) Debe ser una serie de cuatro cifras separadas por un punto. Env&iacute;e esa direcci&oacute;n ip al proveedor de su sitio web indicando: </p>
+                  <p align="center" class="Subtitulo2">No puedo ver mi sitio web <!--#echo var="HTTP_HOST" --> (indique el nombre de su sitio) y mi direcci&oacute;n ip es esta: 222.233.233.222 (la direcci&oacute;n ip que vio al ingresar a <a href="http://www.ip2location.com" target="_blank">www.ip2location.com</a>)</p>
+                  <p>Si lo desea llame a su proveedor indic&aacute;ndole que le ha enviado el correo con la solicitud de revisar si hay un bloqueo o un problema con el servidor.</p>
+                  <p class="Subtitulo2">Posibles causas de bloqueo:</p>
+                  <ol>
+                    <li>M&aacute;s de 4 intentos de ingresar al /cpanel o al webmail. Algunas veces porque intentan ingresar al webmail sin ingresar todo el email como usuario o la clave no es v&aacute;lida. Para prevenir:</li>
+                    <ul>
+                      <li>Si el servidor no acepta su clave despu&eacute;s de dos o tres intentos mejor pida a su proveedor de hosting que le asigne una nueva clave.</li>
+                      <li>Expl&iacute;quele a todos los que usan correo electr&oacute;nico que si se conectan al webmail el usuario es todo su email (en min&uacute;sculas) y la clave que les ha asignado.</li>
+                    </ul>
+                    <li>M&aacute;s de 12 intentos de conectarse con un programa cliente de correo con una clave inv&aacute;lida. Para prevenir:                      </li>
+                    <ul>
+                      <li>Si el programa cliente de correo que est&aacute;n usando (outlook o similar) les pide la clave varias veces, es mejor que en el panel de control reasignen una clave a esa cuenta para prevenir el bloqueo.</li>
+                    </ul>
+                    <li>Usar un programa para conectarse a un puerto especial (no autorizado) del servidor.
+                      Para prevenir:
+                      <ol>
+                        <li>Verificar si alguna de las PCs est&aacute; infectada de virus y desea conectarse a su sitio para da&ntilde;arlo.</li>
+                        <li>Puede tambi&eacute;n que se trate de una persona de su oficina que, con la mala intenci&oacute;n de da&ntilde;ar el sitio busque un programa para intentar da&ntilde;ar el sitio de su propia empresa. - casos muy raros -</li>
+                      </ol>
+                    </li>
+                    <li>M&aacute;s de 60 conecciones al servicio de correo, esto sucede cuando a una cuenta de correo se le configura para que revise si hay correo nuevo a cada minuto (en el outlook o programa similar) y luego, adem&aacute;s de esas sesiones autom&aacute;ticas el usuario todav&iacute;a usa el bot&oacute;n de enviar y recibir, provocando que supere las 60 sesiones autorizadas por hora. Para prevenir:                    </li>
+                    <ul>
+                      <li>Configurar el programa cliente de correo para que revise el correo autom&aacute;ticamente cada 10 minutos. Busque la opci&oacute;n en las opciones de su programa de correo.</li>
+                    </ul>
+                    <li>Env&iacute;o de spam. Env&iacute;os de correo masivo. Para prevenir:
+                      <ul>
+                        <li>Se debe informar a todas las personas a las que se les entregue un email de su sitio web que no est&aacute;n autorizados para realizar env&iacute;os masivos de correo electr&oacute;nico, ya sea reenv&iacute;os de videos o presentaciones de power point como suele a veces suceder o env&iacute;o de publicidad a bases de datos de emails.</li>
+                      </ul>
+                    </li>
+                    </ol>                  
+                  <p>&nbsp;</p></td>
+              </tr>
+              <tr>
+                <td height="1" align="left"><span class="blanco"><img src="i/spacer.gif" width="2" height="3" /></span></td>
+              </tr>
+              <tr>
+                <td height="3" align="left" bgcolor="#495760" class="Subtitulo">Enlaces de Inter&eacute;s</td>
+              </tr>
+              <tr>
+                <td align="left" bgcolor="#F1F4F8"><ul>
+                  <li><a href="http://www.directorio.com.gt" target="_blank">Gu&iacute;a de Negocios de Guatemala</a></li>
+                  <li><a href="http://www.guatesitios.net" target="_blank">Registro de dominios: .com .net .org, Etc.</a></li>
+                  <li><a href="http://www.gt" target="_blank">Registro de domnios: .gt</a></li>
+                </ul></td>
+              </tr>
+              
+              <tr>
+                <td align="center" bgcolor="#365E00"><span class="gris">No olvide que su sitio web s&oacute;lo es una herramienta para alcanzar sus objetivos, una herramienta no hace nada por s&iacute; misma, es necesario utilizarla apropiadamente. -esau-</span></td>
+              </tr>
+              <tr>
+                <td align="center" bgcolor="#000000" class="verde">::: Todos queremos una Guatemala mejor :::</td>
+              </tr>
+              
+              
+              
+          </table></td>
+        </tr>
+        
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top">&nbsp;</td>
+    <td align="center" valign="top">&nbsp;</td>
+  </tr>
+</table>
+</CENTER>
+
+</BODY>
+</HTML>
