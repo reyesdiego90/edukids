@@ -22,6 +22,7 @@
   <meta http-equiv='pragma' content='no-cache'>
     <title>Alumno</title>
     <link rel="stylesheet" href="pantallaAlumno.css">
+    <link rel="stylesheet" href="css/scss/tablaAlumno.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
   </head>
@@ -57,7 +58,7 @@
       <a href="#" id='anuncioDiario1'><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
       <a href="#" id='mostrarCursos1'><i class="fas fa-book"></i><span>CURSOS</span></a>
       <a href="#" id='tareas1'><i class="far fa-file-alt"></i><span>TAREAS</span></a>
-      <a href="#"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
+      <a href="#" id='calificaciones1'><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
   
       </div>
     </div>
@@ -71,7 +72,7 @@
       <a href="#" id='anuncioDiario'><i class="fas fa-bell"></i><span>ANUNCIOS</span></a>
       <a href="#" id='mostrarCursos'><i class="fas fa-book"></i><span>CURSOS</span></a>
       <a href="#" id='tareas'><i class="far fa-file-alt"></i><span>TAREAS</span></a>
-      <a href="#"><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
+      <a href="#" id='calificaciones2'><i class="fas fa-clipboard"></i><span>CALIFICACIONES</span></a>
     
     </div>
     <!--sidebar end-->

@@ -156,5 +156,25 @@ $(document).ready(function() {
       }
     });
   })
+  
+  $("#calificaciones1").on('click', function(){
+    $.ajax({
+      type: "POST",
+      url: "./Components/Alumno/calificacionAlumno.php",
+      success: function(response) {
+          $('#div-results').html(response);
+      }
+    });
+  })
+
+  $("#calificaciones2").on('click', function(){
+    $.ajax({
+      type: "POST",
+      url: "./Components/Alumno/calificacionAlumno.php",
+      success: function(response) {
+          $('#div-results').html(response);
+      }
+    });
+  })
 
 });

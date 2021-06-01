@@ -1,0 +1,38 @@
+.calificacion {
+  width: 70%;
+  min-width: 250px;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow-x: auto;
+  margin-top: 50px;
+}
+.calificacion__tabla {
+  width: 100%;
+  border-radius: 15px;
+}
+.calificacion__cabecera {
+  background-color: #E7AE00;
+  color: royalblue;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.calificacion__cabecera--inicio {
+  border-radius: 15px 0 0 0;
+}
+.calificacion__cabecera--final {
+  border-radius: 0 15px 0 0;
+}
+.calificacion__cabecera th {
+  height: 30px;
+  padding: 10px;
+}
+.calificacion__body tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.calificacion__body tr td {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/*# sourceMappingURL=tablaAlumno.css.map */

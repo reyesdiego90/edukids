@@ -12,7 +12,7 @@ $(document).ready(function(){
             dom:'Pfrtip',
             columnDefs:[{
                 searchPanes:{
-                    show:false,
+                    show:false
                 },
                 targets:[5]
             }
